@@ -18,6 +18,11 @@
 		2C571F9724F521B000E74CB7 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F9624F521B000E74CB7 /* ListNode.swift */; };
 		2C571F9924F6156B00E74CB7 /* 2. 两数相加.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F9824F6156B00E74CB7 /* 2. 两数相加.swift */; };
 		2C571F9B24F62AD600E74CB7 /* 160. 相交链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F9A24F62AD600E74CB7 /* 160. 相交链表.swift */; };
+		2C571F9D24F6324B00E74CB7 /* 86. 分隔链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F9C24F6324B00E74CB7 /* 86. 分隔链表.swift */; };
+		2C571F9F24F63F5900E74CB7 /* 234. 回文链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F9E24F63F5900E74CB7 /* 234. 回文链表.swift */; };
+		2C571FA224F6645500E74CB7 /* 155. 最小栈.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571FA124F6645500E74CB7 /* 155. 最小栈.swift */; };
+		2C571FA424F6658800E74CB7 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571FA324F6658800E74CB7 /* Stack.swift */; };
+		2C571FA624F6994400E74CB7 /* 239. 滑动窗口最大值.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571FA524F6994400E74CB7 /* 239. 滑动窗口最大值.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +50,11 @@
 		2C571F9624F521B000E74CB7 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		2C571F9824F6156B00E74CB7 /* 2. 两数相加.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2. 两数相加.swift"; sourceTree = "<group>"; };
 		2C571F9A24F62AD600E74CB7 /* 160. 相交链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "160. 相交链表.swift"; sourceTree = "<group>"; };
+		2C571F9C24F6324B00E74CB7 /* 86. 分隔链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "86. 分隔链表.swift"; sourceTree = "<group>"; };
+		2C571F9E24F63F5900E74CB7 /* 234. 回文链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "234. 回文链表.swift"; sourceTree = "<group>"; };
+		2C571FA124F6645500E74CB7 /* 155. 最小栈.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "155. 最小栈.swift"; sourceTree = "<group>"; };
+		2C571FA324F6658800E74CB7 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		2C571FA524F6994400E74CB7 /* 239. 滑动窗口最大值.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "239. 滑动窗口最大值.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +98,7 @@
 		2C571F8224F4D47600E74CB7 /* 算法 */ = {
 			isa = PBXGroup;
 			children = (
+				2C571FA024F6627100E74CB7 /* 栈、队列 */,
 				2C571F9324F520AA00E74CB7 /* 链表 */,
 				2C571F8424F4D48C00E74CB7 /* 数组 */,
 			);
@@ -118,6 +129,7 @@
 			children = (
 				2C571F8A24F50BA200E74CB7 /* Swap.swift */,
 				2C571F9624F521B000E74CB7 /* ListNode.swift */,
+				2C571FA324F6658800E74CB7 /* Stack.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -126,10 +138,21 @@
 			isa = PBXGroup;
 			children = (
 				2C571F9824F6156B00E74CB7 /* 2. 两数相加.swift */,
+				2C571F9C24F6324B00E74CB7 /* 86. 分隔链表.swift */,
 				2C571F9A24F62AD600E74CB7 /* 160. 相交链表.swift */,
 				2C571F9424F5215200E74CB7 /* 203. 移除链表元素.swift */,
+				2C571F9E24F63F5900E74CB7 /* 234. 回文链表.swift */,
 			);
 			path = "链表";
+			sourceTree = "<group>";
+		};
+		2C571FA024F6627100E74CB7 /* 栈、队列 */ = {
+			isa = PBXGroup;
+			children = (
+				2C571FA124F6645500E74CB7 /* 155. 最小栈.swift */,
+				2C571FA524F6994400E74CB7 /* 239. 滑动窗口最大值.swift */,
+			);
+			path = "栈、队列";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,16 +214,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C571F8B24F50BA200E74CB7 /* Swap.swift in Sources */,
+				2C571FA424F6658800E74CB7 /* Stack.swift in Sources */,
+				2C571F9D24F6324B00E74CB7 /* 86. 分隔链表.swift in Sources */,
 				2C571F8D24F5119400E74CB7 /* 16.16. 部分排序.swift in Sources */,
 				2C571F9724F521B000E74CB7 /* ListNode.swift in Sources */,
 				2C571F7C24F3AB2600E74CB7 /* main.swift in Sources */,
+				2C571FA224F6645500E74CB7 /* 155. 最小栈.swift in Sources */,
 				2C571F9124F51F2300E74CB7 /* 977. 有序数组的平方.swift in Sources */,
 				2C571F8F24F51DE800E74CB7 /* 164. 最大间距.swift in Sources */,
 				2C571F9924F6156B00E74CB7 /* 2. 两数相加.swift in Sources */,
 				2C571F8824F4ED7900E74CB7 /* 75. 颜色分类.swift in Sources */,
 				2C571F8624F4D4FE00E74CB7 /* 88. 合并两个有序数组.swift in Sources */,
+				2C571F9F24F63F5900E74CB7 /* 234. 回文链表.swift in Sources */,
 				2C571F9B24F62AD600E74CB7 /* 160. 相交链表.swift in Sources */,
 				2C571F9524F5215200E74CB7 /* 203. 移除链表元素.swift in Sources */,
+				2C571FA624F6994400E74CB7 /* 239. 滑动窗口最大值.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
