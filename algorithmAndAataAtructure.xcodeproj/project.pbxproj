@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		2C571F7C24F3AB2600E74CB7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F7B24F3AB2600E74CB7 /* main.swift */; };
+		2C571F8624F4D4FE00E74CB7 /* 88. 合并两个有序数组.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F8524F4D4FE00E74CB7 /* 88. 合并两个有序数组.swift */; };
+		2C571F8824F4ED7900E74CB7 /* 75. 颜色分类.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F8724F4ED7900E74CB7 /* 75. 颜色分类.swift */; };
+		2C571F8B24F50BA200E74CB7 /* Swap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F8A24F50BA200E74CB7 /* Swap.swift */; };
+		2C571F8D24F5119400E74CB7 /* 16.16. 部分排序.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F8C24F5119400E74CB7 /* 16.16. 部分排序.swift */; };
+		2C571F8F24F51DE800E74CB7 /* 164. 最大间距.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F8E24F51DE800E74CB7 /* 164. 最大间距.swift */; };
+		2C571F9124F51F2300E74CB7 /* 977. 有序数组的平方.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F9024F51F2300E74CB7 /* 977. 有序数组的平方.swift */; };
+		2C571F9524F5215200E74CB7 /* 203. 移除链表元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F9424F5215200E74CB7 /* 203. 移除链表元素.swift */; };
+		2C571F9724F521B000E74CB7 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F9624F521B000E74CB7 /* ListNode.swift */; };
+		2C571F9924F6156B00E74CB7 /* 2. 两数相加.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F9824F6156B00E74CB7 /* 2. 两数相加.swift */; };
+		2C571F9B24F62AD600E74CB7 /* 160. 相交链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F9A24F62AD600E74CB7 /* 160. 相交链表.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +35,16 @@
 /* Begin PBXFileReference section */
 		2C571F7824F3AB2600E74CB7 /* algorithmAndAataAtructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithmAndAataAtructure; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C571F7B24F3AB2600E74CB7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2C571F8524F4D4FE00E74CB7 /* 88. 合并两个有序数组.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "88. 合并两个有序数组.swift"; sourceTree = "<group>"; };
+		2C571F8724F4ED7900E74CB7 /* 75. 颜色分类.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "75. 颜色分类.swift"; sourceTree = "<group>"; };
+		2C571F8A24F50BA200E74CB7 /* Swap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swap.swift; sourceTree = "<group>"; };
+		2C571F8C24F5119400E74CB7 /* 16.16. 部分排序.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16.16. 部分排序.swift"; sourceTree = "<group>"; };
+		2C571F8E24F51DE800E74CB7 /* 164. 最大间距.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "164. 最大间距.swift"; sourceTree = "<group>"; };
+		2C571F9024F51F2300E74CB7 /* 977. 有序数组的平方.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "977. 有序数组的平方.swift"; sourceTree = "<group>"; };
+		2C571F9424F5215200E74CB7 /* 203. 移除链表元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "203. 移除链表元素.swift"; sourceTree = "<group>"; };
+		2C571F9624F521B000E74CB7 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
+		2C571F9824F6156B00E74CB7 /* 2. 两数相加.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2. 两数相加.swift"; sourceTree = "<group>"; };
+		2C571F9A24F62AD600E74CB7 /* 160. 相交链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "160. 相交链表.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +77,59 @@
 		2C571F7A24F3AB2600E74CB7 /* algorithmAndAataAtructure */ = {
 			isa = PBXGroup;
 			children = (
+				2C571F8924F50B9700E74CB7 /* Common */,
+				2C571F8324F4D48200E74CB7 /* 数据结构 */,
+				2C571F8224F4D47600E74CB7 /* 算法 */,
 				2C571F7B24F3AB2600E74CB7 /* main.swift */,
 			);
 			path = algorithmAndAataAtructure;
+			sourceTree = "<group>";
+		};
+		2C571F8224F4D47600E74CB7 /* 算法 */ = {
+			isa = PBXGroup;
+			children = (
+				2C571F9324F520AA00E74CB7 /* 链表 */,
+				2C571F8424F4D48C00E74CB7 /* 数组 */,
+			);
+			path = "算法";
+			sourceTree = "<group>";
+		};
+		2C571F8324F4D48200E74CB7 /* 数据结构 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "数据结构";
+			sourceTree = "<group>";
+		};
+		2C571F8424F4D48C00E74CB7 /* 数组 */ = {
+			isa = PBXGroup;
+			children = (
+				2C571F8C24F5119400E74CB7 /* 16.16. 部分排序.swift */,
+				2C571F8724F4ED7900E74CB7 /* 75. 颜色分类.swift */,
+				2C571F8524F4D4FE00E74CB7 /* 88. 合并两个有序数组.swift */,
+				2C571F8E24F51DE800E74CB7 /* 164. 最大间距.swift */,
+				2C571F9024F51F2300E74CB7 /* 977. 有序数组的平方.swift */,
+			);
+			path = "数组";
+			sourceTree = "<group>";
+		};
+		2C571F8924F50B9700E74CB7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2C571F8A24F50BA200E74CB7 /* Swap.swift */,
+				2C571F9624F521B000E74CB7 /* ListNode.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2C571F9324F520AA00E74CB7 /* 链表 */ = {
+			isa = PBXGroup;
+			children = (
+				2C571F9824F6156B00E74CB7 /* 2. 两数相加.swift */,
+				2C571F9A24F62AD600E74CB7 /* 160. 相交链表.swift */,
+				2C571F9424F5215200E74CB7 /* 203. 移除链表元素.swift */,
+			);
+			path = "链表";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +190,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C571F8B24F50BA200E74CB7 /* Swap.swift in Sources */,
+				2C571F8D24F5119400E74CB7 /* 16.16. 部分排序.swift in Sources */,
+				2C571F9724F521B000E74CB7 /* ListNode.swift in Sources */,
 				2C571F7C24F3AB2600E74CB7 /* main.swift in Sources */,
+				2C571F9124F51F2300E74CB7 /* 977. 有序数组的平方.swift in Sources */,
+				2C571F8F24F51DE800E74CB7 /* 164. 最大间距.swift in Sources */,
+				2C571F9924F6156B00E74CB7 /* 2. 两数相加.swift in Sources */,
+				2C571F8824F4ED7900E74CB7 /* 75. 颜色分类.swift in Sources */,
+				2C571F8624F4D4FE00E74CB7 /* 88. 合并两个有序数组.swift in Sources */,
+				2C571F9B24F62AD600E74CB7 /* 160. 相交链表.swift in Sources */,
+				2C571F9524F5215200E74CB7 /* 203. 移除链表元素.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,8 @@
 
 import Foundation
 
-print("Hello, World!")
+let head = ListNode(1)
 
+let newHead = removeElements1(head, 5)
 
 
