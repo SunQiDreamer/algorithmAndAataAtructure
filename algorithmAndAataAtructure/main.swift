@@ -7,3 +7,6 @@
 //
 
 import Foundation
+
+let maxes = maxSlidingWindow([7,2,4], 2)
+print(maxes)

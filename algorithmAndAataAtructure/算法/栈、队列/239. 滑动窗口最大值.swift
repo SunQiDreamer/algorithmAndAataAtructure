@@ -8,39 +8,43 @@
 
 import Foundation
 
+// 使用双端队列， 将滑动窗口的索引，按照索引对应值的从大到小添加到队列中
+
 func maxSlidingWindow(_ nums: [Int], _ k: Int) -> [Int] {
-    if nums.count == 0  || k < 1 {
+    if nums.count == 0 || k < 1 {
         return []
     }
-    
     if k == 1 {
         return nums
     }
     
+    var deque = Deque<Int>(nums.count)
     var maxes: [Int] = []
-    var deque = Deque<Int>(nums.count - k + 1)
     for r in 0..<nums.count {
-        
-        // 如果当前的值大于双端队列的队尾，删除队尾的索引值
+    
+        // 当前的值大于队尾索引对用的值，将队尾索引对应的值删除
         while !deque.isEmpty && nums[r] >= nums[deque.peekBack() ?? 0] {
             deque.dequeueBack()
         }
         
-        // 将当前的索引值添加到队尾
+        // 添加当前索引值
         deque.enqueue(r)
         
-        // 检查窗口的索引是否合法
+        //检查当前索引是否非法
         let l = r - k + 1
-        if l < 0 { // 最左边的索引非法
+        if l < 0 { // 索引非法
             continue
         }
         
-        if deque.peekFront() ?? 0 < l { // 队头的索引值非法（窗口已经滑出了对头索引），删除掉该索引
+        // 检查队头合法行
+        if deque.peekFront() ?? 0 < l {
             deque.dequeue()
         }
         
-        maxes[l] = nums[deque.peekFront() ?? 0]
+        // 设置最大值
+        if let index = deque.peekFront() {
+             maxes.append(nums[index])
+        }
     }
-    
     return maxes
 }
