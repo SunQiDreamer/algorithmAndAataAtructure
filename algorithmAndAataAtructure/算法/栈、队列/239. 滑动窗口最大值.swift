@@ -9,6 +9,7 @@
 import Foundation
 
 // 使用双端队列， 将滑动窗口的索引，按照索引对应值的从大到小添加到队列中
+// 逐渐递减或者逐渐递增的队列，叫单调队列
 
 func maxSlidingWindow(_ nums: [Int], _ k: Int) -> [Int] {
     if nums.count == 0 || k < 1 {

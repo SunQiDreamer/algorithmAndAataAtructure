@@ -7,3 +7,12 @@
 //  https://leetcode-cn.com/problems/squares-of-a-sorted-array/
 
 import Foundation
+
+func sortedSquares(_ A: [Int]) -> [Int] {
+     let array = A.map { (value) -> Int in
+        value * value
+     }.sorted {
+        $0 <= $1
+     }
+    return array
+}

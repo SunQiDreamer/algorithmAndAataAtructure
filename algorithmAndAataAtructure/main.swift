@@ -8,5 +8,9 @@
 
 import Foundation
 
-let maxes = maxSlidingWindow([7,2,4], 2)
-print(maxes)
+
+var sorts = [1, 3, 2, 4, 7, 5, 6, 9, 12]
+
+let sort = ShellSort()
+sort.array = sorts
+print(sort.sort())

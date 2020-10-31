@@ -8,6 +8,18 @@
 
 import Foundation
 
+
+// 时间复杂度是O(nlogn)， 没有达到要求的O(n)
 func maximumGap(_ nums: [Int]) -> Int {
-    return 0
+    if nums.count < 2 {
+        return 0
+    }
+    
+    let array = nums.sorted()
+    var maximumGap = 0
+    
+    for i in 1..<array.count {
+        maximumGap = max(maximumGap, array[i] - array[i - 1])
+    }
+    return maximumGap
 }
