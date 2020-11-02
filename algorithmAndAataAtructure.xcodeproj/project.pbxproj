@@ -45,6 +45,10 @@
 		2C6680A92518DE4800C0D959 /* 112. 路径总和.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6680A82518DE4800C0D959 /* 112. 路径总和.swift */; };
 		2C6680AC2518E35600C0D959 /* 226. 翻转二叉树.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6680AB2518E35600C0D959 /* 226. 翻转二叉树.swift */; };
 		2C7401032514E1CD00A3BC8C /* 53. 最大子序和.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7401022514E1CD00A3BC8C /* 53. 最大子序和.swift */; };
+		2C835037254FF34400AEFC97 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C835036254FF34400AEFC97 /* Graph.swift */; };
+		2C83503A25500F1600AEFC97 /* ListGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C83503925500F1600AEFC97 /* ListGraph.swift */; };
+		2C83503D255026C000AEFC97 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C83503C255026C000AEFC97 /* Vertex.swift */; };
+		2C835040255026D500AEFC97 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C83503F255026D500AEFC97 /* Edge.swift */; };
 		2C84C593254A639D002E89E8 /* 冒泡排序1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84C592254A639D002E89E8 /* 冒泡排序1.swift */; };
 		2C84C596254A63C0002E89E8 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84C595254A63C0002E89E8 /* Sort.swift */; };
 		2C84C599254A6E02002E89E8 /* 冒泡排序2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84C598254A6E02002E89E8 /* 冒泡排序2.swift */; };
@@ -57,6 +61,14 @@
 		2C84C733254C07AF002E89E8 /* 归并排序.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84C732254C07AF002E89E8 /* 归并排序.swift */; };
 		2C84C736254C3BCE002E89E8 /* 快速排序.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84C735254C3BCE002E89E8 /* 快速排序.swift */; };
 		2C84C73A254D1B96002E89E8 /* 希尔排序.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84C739254D1B96002E89E8 /* 希尔排序.swift */; };
+		2C84C73E254D35B8002E89E8 /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84C73D254D35B7002E89E8 /* UnionFind.swift */; };
+		2C84C742254D3C87002E89E8 /* UnionFind_QF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84C741254D3C87002E89E8 /* UnionFind_QF.swift */; };
+		2C84C745254D49AD002E89E8 /* UnionFind_QU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84C744254D49AD002E89E8 /* UnionFind_QU.swift */; };
+		2C84C748254D4FA8002E89E8 /* UnionFind_QU_S.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84C747254D4FA8002E89E8 /* UnionFind_QU_S.swift */; };
+		2C84C74B254D521E002E89E8 /* UnionFind_QU_R.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84C74A254D521E002E89E8 /* UnionFind_QU_R.swift */; };
+		2C84C74E254D53B7002E89E8 /* UnionFind_QU_R_PC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84C74D254D53B7002E89E8 /* UnionFind_QU_R_PC.swift */; };
+		2C84C751254D56AA002E89E8 /* UnionFind_QU_R_PS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84C750254D56AA002E89E8 /* UnionFind_QU_R_PS.swift */; };
+		2C84C755254D583A002E89E8 /* UnionFind_QU_R_PH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84C754254D583A002E89E8 /* UnionFind_QU_R_PH.swift */; };
 		2CADB1C12514BC1400276DEF /* 455. 分发饼干.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADB1C02514BC1400276DEF /* 455. 分发饼干.swift */; };
 		2CADB1C52514BC5F00276DEF /* 452. 用最少数量的箭引爆气球.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADB1C42514BC5F00276DEF /* 452. 用最少数量的箭引爆气球.swift */; };
 		2CADB1CB2514BCB000276DEF /* 605. 种花问题.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADB1CA2514BCB000276DEF /* 605. 种花问题.swift */; };
@@ -156,6 +168,10 @@
 		2C6680A82518DE4800C0D959 /* 112. 路径总和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "112. 路径总和.swift"; sourceTree = "<group>"; };
 		2C6680AB2518E35600C0D959 /* 226. 翻转二叉树.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "226. 翻转二叉树.swift"; sourceTree = "<group>"; };
 		2C7401022514E1CD00A3BC8C /* 53. 最大子序和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "53. 最大子序和.swift"; sourceTree = "<group>"; };
+		2C835036254FF34400AEFC97 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		2C83503925500F1600AEFC97 /* ListGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGraph.swift; sourceTree = "<group>"; };
+		2C83503C255026C000AEFC97 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		2C83503F255026D500AEFC97 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		2C84C592254A639D002E89E8 /* 冒泡排序1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "冒泡排序1.swift"; sourceTree = "<group>"; };
 		2C84C595254A63C0002E89E8 /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
 		2C84C598254A6E02002E89E8 /* 冒泡排序2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "冒泡排序2.swift"; sourceTree = "<group>"; };
@@ -168,6 +184,14 @@
 		2C84C732254C07AF002E89E8 /* 归并排序.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "归并排序.swift"; sourceTree = "<group>"; };
 		2C84C735254C3BCE002E89E8 /* 快速排序.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "快速排序.swift"; sourceTree = "<group>"; };
 		2C84C739254D1B96002E89E8 /* 希尔排序.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "希尔排序.swift"; sourceTree = "<group>"; };
+		2C84C73D254D35B7002E89E8 /* UnionFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind.swift; sourceTree = "<group>"; };
+		2C84C741254D3C87002E89E8 /* UnionFind_QF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind_QF.swift; sourceTree = "<group>"; };
+		2C84C744254D49AD002E89E8 /* UnionFind_QU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind_QU.swift; sourceTree = "<group>"; };
+		2C84C747254D4FA8002E89E8 /* UnionFind_QU_S.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind_QU_S.swift; sourceTree = "<group>"; };
+		2C84C74A254D521E002E89E8 /* UnionFind_QU_R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind_QU_R.swift; sourceTree = "<group>"; };
+		2C84C74D254D53B7002E89E8 /* UnionFind_QU_R_PC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind_QU_R_PC.swift; sourceTree = "<group>"; };
+		2C84C750254D56AA002E89E8 /* UnionFind_QU_R_PS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind_QU_R_PS.swift; sourceTree = "<group>"; };
+		2C84C754254D583A002E89E8 /* UnionFind_QU_R_PH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind_QU_R_PH.swift; sourceTree = "<group>"; };
 		2CADB1C02514BC1400276DEF /* 455. 分发饼干.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "455. 分发饼干.swift"; sourceTree = "<group>"; };
 		2CADB1C42514BC5F00276DEF /* 452. 用最少数量的箭引爆气球.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "452. 用最少数量的箭引爆气球.swift"; sourceTree = "<group>"; };
 		2CADB1CA2514BCB000276DEF /* 605. 种花问题.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "605. 种花问题.swift"; sourceTree = "<group>"; };
@@ -292,6 +316,8 @@
 		2C571F8324F4D48200E74CB7 /* 数据结构 */ = {
 			isa = PBXGroup;
 			children = (
+				2C84C75A254D5DFD002E89E8 /* 图 */,
+				2C84C73C254D333E002E89E8 /* 并查集 */,
 			);
 			path = "数据结构";
 			sourceTree = "<group>";
@@ -363,6 +389,32 @@
 				2CCB28592509D661004F0BDD /* 3. 无重复字符的最长子串.swift */,
 			);
 			path = "字符串";
+			sourceTree = "<group>";
+		};
+		2C84C73C254D333E002E89E8 /* 并查集 */ = {
+			isa = PBXGroup;
+			children = (
+				2C84C73D254D35B7002E89E8 /* UnionFind.swift */,
+				2C84C741254D3C87002E89E8 /* UnionFind_QF.swift */,
+				2C84C744254D49AD002E89E8 /* UnionFind_QU.swift */,
+				2C84C747254D4FA8002E89E8 /* UnionFind_QU_S.swift */,
+				2C84C74A254D521E002E89E8 /* UnionFind_QU_R.swift */,
+				2C84C74D254D53B7002E89E8 /* UnionFind_QU_R_PC.swift */,
+				2C84C750254D56AA002E89E8 /* UnionFind_QU_R_PS.swift */,
+				2C84C754254D583A002E89E8 /* UnionFind_QU_R_PH.swift */,
+			);
+			path = "并查集";
+			sourceTree = "<group>";
+		};
+		2C84C75A254D5DFD002E89E8 /* 图 */ = {
+			isa = PBXGroup;
+			children = (
+				2C835036254FF34400AEFC97 /* Graph.swift */,
+				2C83503925500F1600AEFC97 /* ListGraph.swift */,
+				2C83503C255026C000AEFC97 /* Vertex.swift */,
+				2C83503F255026D500AEFC97 /* Edge.swift */,
+			);
+			path = "图";
 			sourceTree = "<group>";
 		};
 		2CADB1BF2514BBFB00276DEF /* 贪心 */ = {
@@ -507,6 +559,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C571F8B24F50BA200E74CB7 /* Swap.swift in Sources */,
+				2C84C74E254D53B7002E89E8 /* UnionFind_QU_R_PC.swift in Sources */,
 				2CD6F7BF2510E4280091F223 /* 11. 盛最多水的容器.swift in Sources */,
 				2C84C736254C3BCE002E89E8 /* 快速排序.swift in Sources */,
 				2C84C599254A6E02002E89E8 /* 冒泡排序2.swift in Sources */,
@@ -530,9 +583,11 @@
 				2CADB1D12514BDDA00276DEF /* 322. 零钱兑换.swift in Sources */,
 				2C84C68D254BF2B6002E89E8 /* 插入排序1.swift in Sources */,
 				2C571F8D24F5119400E74CB7 /* 16.16. 部分排序.swift in Sources */,
+				2C84C745254D49AD002E89E8 /* UnionFind_QU.swift in Sources */,
 				2CD6F7B525108EE80091F223 /* 54. 螺旋矩阵.swift in Sources */,
 				2C571F9724F521B000E74CB7 /* ListNode.swift in Sources */,
 				2C84C596254A63C0002E89E8 /* Sort.swift in Sources */,
+				2C84C742254D3C87002E89E8 /* UnionFind_QF.swift in Sources */,
 				2C84C59C254A7094002E89E8 /* 冒泡排序3.swift in Sources */,
 				2C571F7C24F3AB2600E74CB7 /* main.swift in Sources */,
 				2C6680A62518DBAF00C0D959 /* 111. 二叉树的最小深度.swift in Sources */,
@@ -543,7 +598,9 @@
 				2CD70FF5251B48F800DC051B /* 617. 合并二叉树.swift in Sources */,
 				2C66808E251895A400C0D959 /* 剑指 Offer 06. 从尾到头打印链表.swift in Sources */,
 				2C571F9124F51F2300E74CB7 /* 977. 有序数组的平方.swift in Sources */,
+				2C835037254FF34400AEFC97 /* Graph.swift in Sources */,
 				2CD6F7B1250FA6180091F223 /* 50. Pow(x, n).swift in Sources */,
+				2C83503A25500F1600AEFC97 /* ListGraph.swift in Sources */,
 				2CADB1CE2514BCCF00276DEF /* 135. 分发糖果.swift in Sources */,
 				2C668091251897FB00C0D959 /* 538. 把二叉搜索树转换为累加树.swift in Sources */,
 				2C571FAA24F7876A00E74CB7 /* 654. 最大二叉树.swift in Sources */,
@@ -553,11 +610,16 @@
 				2CD6F7B3251082B50091F223 /* 剑指 Offer 62. 圆圈中最后剩下的数字.swift in Sources */,
 				2CD3A5E425071B0700EB78FB /* 572. 另一个树的子树.swift in Sources */,
 				2C66809425189D2000C0D959 /* 100. 相同的树.swift in Sources */,
+				2C84C751254D56AA002E89E8 /* UnionFind_QU_R_PS.swift in Sources */,
+				2C84C755254D583A002E89E8 /* UnionFind_QU_R_PH.swift in Sources */,
 				2C571F8F24F51DE800E74CB7 /* 164. 最大间距.swift in Sources */,
+				2C83503D255026C000AEFC97 /* Vertex.swift in Sources */,
 				2CD6F7BD2510DD920091F223 /* 253.会议室2.swift in Sources */,
+				2C84C74B254D521E002E89E8 /* UnionFind_QU_R.swift in Sources */,
 				2C6680A02518D57300C0D959 /* 108. 将有序数组转换为二叉搜索树.swift in Sources */,
 				2CD9B8422519EEBD00A09EBB /* 257. 二叉树的所有路径.swift in Sources */,
 				2CADB1D42514BE0300276DEF /* 518. 零钱兑换 II.swift in Sources */,
+				2C84C73E254D35B8002E89E8 /* UnionFind.swift in Sources */,
 				2CFABBDC250C9E2E00D03A9B /* 333.最大BST子树.swift in Sources */,
 				2CD6F7B92510D2C70091F223 /* 7. 整数反转.swift in Sources */,
 				2C84C730254C03B9002E89E8 /* 插入排序3.swift in Sources */,
@@ -575,6 +637,7 @@
 				2CD6F7C3251240B50091F223 /* 25. K 个一组翻转链表.swift in Sources */,
 				2CD6F7C5251240EE0091F223 /* 21. 合并两个有序链表.swift in Sources */,
 				2C571F8624F4D4FE00E74CB7 /* 88. 合并两个有序数组.swift in Sources */,
+				2C84C748254D4FA8002E89E8 /* UnionFind_QU_S.swift in Sources */,
 				2C6680972518A19400C0D959 /* 101. 对称二叉树.swift in Sources */,
 				2C571F9F24F63F5900E74CB7 /* 234. 回文链表.swift in Sources */,
 				2CD6F7B725109FA20091F223 /* 146. LRU缓存机制.swift in Sources */,
@@ -589,6 +652,7 @@
 				2CCB285D250A6029004F0BDD /* 剑指 Offer 47. 礼物的最大价值.swift in Sources */,
 				2CD6F7BB2510DBDC0091F223 /* 252.会议室.swift in Sources */,
 				2C571F9524F5215200E74CB7 /* 203. 移除链表元素.swift in Sources */,
+				2C835040255026D500AEFC97 /* Edge.swift in Sources */,
 				2C571FA624F6994400E74CB7 /* 239. 滑动窗口最大值.swift in Sources */,
 				2CD70FFB251B523600DC051B /* 543. 二叉树的直径.swift in Sources */,
 				2CD6F7CB251241530091F223 /* 206. 反转链表.swift in Sources */,
