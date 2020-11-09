@@ -8,14 +8,17 @@
 
 import Foundation
 
-// 利用二分法找逆序对，将待插入元素插入到合适位置
+// 利用二分法找逆序对，将待插入元素插入到合适位置，减少比较的次数
 class InsertionSort3: Sort {
     typealias T = Int
     var array: [Int] = []
     
     func sort() -> [Int] {
         for begin in 1..<array.count {
-            insert(begin, dest: search(begin))
+            // 利用二分法找到需要插入的位置
+            let index = search(begin)
+            // 将元素插入
+            insert(begin, dest: index)
         }
         
         return array

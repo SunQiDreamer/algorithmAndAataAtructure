@@ -8,7 +8,7 @@
 
 import Foundation
 
-//找出最大值，放在最后一位举报v
+//找出最大值，放在最后一位
 class SelectionSort: Sort {
     typealias T = Int
     var array: [Int] = []

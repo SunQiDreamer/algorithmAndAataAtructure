@@ -14,9 +14,13 @@ import Foundation
         0
     }
     
-    func add(_ w1: E, w2: E) -> E {}
+    func add(_ w1: E, w2: E) -> E {
+        return w1
+    }
     
-    func zero() -> E {}
+//    func zero() -> E {
+//        
+//    }
 }
 
 class VertexVisitor<V> {
@@ -40,9 +44,9 @@ class EdgeInfo<V: Hashable, E: Hashable>: Hashable {
     
     private var from: V
     private var to: V
-    private var weight: E
+    private var weight: E?
     
-    init(_ from: V, to: V, weight: E) {
+    init(_ from: V, to: V, weight: E?) {
         self.from = from
         self.to = to
         self.weight = weight
@@ -69,9 +73,13 @@ protocol Graph {
     
     func verticesSize() -> Int
     
+    /// 添加顶点
+    /// - Parameter v: 顶点
     func addVertices(_ v: V)
+    
+    /// 添加边
     func addEdges(_ from: V, to: V)
-    func addEdges(_ from: V, to: V, weight: E)
+    func addEdges(_ from: V, to: V, weight: E?)
     
     func removeVertex(_ v: V)
     func removeEdge(_ from: V, to: V)
@@ -79,10 +87,10 @@ protocol Graph {
     func bfs(_ begin: V, visitor: VertexVisitor<V>) // 广度优先搜索
     func dfs(_ begin: V, visitor: VertexVisitor<V>) // 深度优先搜索
     
-    var mst: Set<EdgeInfo<V, E>> { get set }
+    func mst() -> Set<EdgeInfo<V, E>> // 最小生成树
     
-    var topoligicalSort: Array<V> { get set }
-    
+    func topoligicalSort() -> Array<V> // 拓扑算法
+        
     func shortestPath(_ begin: V) -> [V: PathInfo<V, E>]
     
     func shortestPath() -> [V: [V: PathInfo<V, E>]]

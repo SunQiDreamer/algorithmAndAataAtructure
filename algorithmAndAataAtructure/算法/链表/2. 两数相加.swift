@@ -8,6 +8,7 @@
 
 import Foundation
 
+// 构建一个新的链表
 func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
     if l1 == nil {
         return l2
@@ -17,13 +18,13 @@ func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         return l1
     }
     
-    let newHead = ListNode(0)
-    var last: ListNode? = newHead
+    let newHead = ListNode(0) // 虚拟头结点
+    var last: ListNode? = newHead  // 构建新链表当前的位置的指针
     
     var carry = 0 // 进位
     
-    var newL1 = l1
-    var newL2 = l2
+    var newL1 = l1 // 记录遍历到了l1当前位置的指针
+    var newL2 = l2 // 记录遍历到了l2当前位置的指针
     
     while newL1 != nil || newL2 != nil {
         var v1: Int = 0

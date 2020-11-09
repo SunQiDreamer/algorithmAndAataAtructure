@@ -18,10 +18,12 @@ class InsertionSort: Sort {
             var cur = begin
             
             while cur > 0 && array[cur] < array[cur - 1] {
+                // 这里需要频繁的交换两个元素
                 array.swapAt(cur, cur - 1)
                 cur = cur - 1
             }
         }
         return array
     }
+    
 }

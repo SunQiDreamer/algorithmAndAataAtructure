@@ -43,6 +43,7 @@ class MergeSort: Sort {
             leftArray?[i] = array[begin + i]
         }
         while li < le {
+            // 从小到大排列
             if ri < re && array[ri] < leftArray?[li] ?? 0 {
                 array[ai] = array[ri]
                 ai = ai + 1
@@ -54,5 +55,4 @@ class MergeSort: Sort {
             }
         }
     }
-    
 }

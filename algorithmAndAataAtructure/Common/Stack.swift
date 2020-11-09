@@ -28,4 +28,8 @@ class Stack<T> {
     func isEmpty() -> Bool {
         array.isEmpty
     }
+    
+    func size() -> Int {
+        array.count
+    }
 }

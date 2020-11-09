@@ -11,9 +11,9 @@ import Foundation
 class Edge<V: Hashable, E: Hashable>: Hashable {
     var from: Vertex<V, E>
     var to: Vertex<V, E>
-    var weight: E
+    var weight: E?
     
-    init(_ from: Vertex<V, E>, to: Vertex<V, E>, weight: E) {
+    init(_ from: Vertex<V, E>, to: Vertex<V, E>, weight: E?) {
         self.from = from
         self.to = to
         self.weight = weight
