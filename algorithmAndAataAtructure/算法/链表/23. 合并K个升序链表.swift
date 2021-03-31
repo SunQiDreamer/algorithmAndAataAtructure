@@ -33,3 +33,29 @@ func mergeKLists(_ lists: [ListNode?]) -> ListNode? {
     }
     return nHead
 }
+
+// 依次合并链表
+func mergeKLists2(_ lists: [ListNode?]) -> ListNode? {
+    var nHead: ListNode? = nil
+    for head in lists {
+        nHead = mergeTwoLists(nHead, head)
+    }
+    return nHead
+}
+
+// 分治思想（二分法）
+func mergeKLists3(_ lists: [ListNode?]) -> ListNode? {
+    return merge(lists, l: 0, r: lists.count - 1)
+}
+
+private func merge(_ lists: [ListNode?], l: Int, r: Int) -> ListNode? {
+    if l == r {
+        return lists[l]
+    }
+    if l > r {
+        return nil
+    }
+    
+    let mid = (l + r) >> 1
+    return mergeTwoLists(merge(lists, l: l, r: mid), merge(lists, l: mid, r: r))
+}

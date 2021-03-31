@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C2B517B255A3E1D007E2007 /* 9. 回文数.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B517A255A3E1D007E2007 /* 9. 回文数.swift */; };
 		2C3090172551579100EF40DF /* 64. 最小路径和.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3090162551579100EF40DF /* 64. 最小路径和.swift */; };
 		2C30901A25515A2400EF40DF /* 62. 不同路径.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C30901925515A2400EF40DF /* 62. 不同路径.swift */; };
 		2C4F1D4D2515FF1800BE25FB /* 300. 最长上升子序列.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F1D4C2515FF1800BE25FB /* 300. 最长上升子序列.swift */; };
@@ -137,6 +138,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C2B517A255A3E1D007E2007 /* 9. 回文数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "9. 回文数.swift"; sourceTree = "<group>"; };
 		2C3090162551579100EF40DF /* 64. 最小路径和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "64. 最小路径和.swift"; sourceTree = "<group>"; };
 		2C30901925515A2400EF40DF /* 62. 不同路径.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "62. 不同路径.swift"; sourceTree = "<group>"; };
 		2C4F1D4C2515FF1800BE25FB /* 300. 最长上升子序列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "300. 最长上升子序列.swift"; sourceTree = "<group>"; };
@@ -409,6 +411,7 @@
 				2CD3A5E52507607B00EB78FB /* 242. 有效的字母异位词.swift */,
 				2CD3A5E72508A21600EB78FB /* 151. 翻转字符串里的单词.swift */,
 				2CCB28592509D661004F0BDD /* 3. 无重复字符的最长子串.swift */,
+				2C2B517A255A3E1D007E2007 /* 9. 回文数.swift */,
 			);
 			path = "字符串";
 			sourceTree = "<group>";
@@ -657,6 +660,7 @@
 				2CD9B8422519EEBD00A09EBB /* 257. 二叉树的所有路径.swift in Sources */,
 				2CADB1D42514BE0300276DEF /* 518. 零钱兑换 II.swift in Sources */,
 				2C84C73E254D35B8002E89E8 /* UnionFind.swift in Sources */,
+				2C2B517B255A3E1D007E2007 /* 9. 回文数.swift in Sources */,
 				2CFABBDC250C9E2E00D03A9B /* 333.最大BST子树.swift in Sources */,
 				2CD6F7B92510D2C70091F223 /* 7. 整数反转.swift in Sources */,
 				2C84C730254C03B9002E89E8 /* 插入排序3.swift in Sources */,
