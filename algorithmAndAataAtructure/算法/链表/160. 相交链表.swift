@@ -16,6 +16,7 @@ func getIntersectionNode(_ headA: ListNode?, _ headB: ListNode?) -> ListNode? {
     
     var curA = headA, curB = headB
     
+    // 退出循环有两个条件  1.找到相交的点  2.不是相交链表，遍历完了两个链表，curA == curB == nil
     while curA !== curB {
         if curA == nil {
             // 链表a遍历完了，指向链表b头结点

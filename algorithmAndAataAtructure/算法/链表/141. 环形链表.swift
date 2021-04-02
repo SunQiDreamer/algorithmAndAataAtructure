@@ -31,3 +31,26 @@ func hasCycle(_ head: ListNode?) -> Bool {
     }
     return cycle
 }
+
+
+func hasCycle1(_ head: ListNode?) -> Bool {
+    if head == nil || head?.next == nil {
+        return false
+    }
+    
+    var fast = head?.next
+    var slow = head
+    
+    var cycle = false
+    
+    while slow != nil || fast?.next?.next != nil {
+        if fast === slow {
+            cycle = true
+            break
+        }
+        slow = slow?.next
+        fast = fast?.next?.next
+    }
+    
+    return cycle
+}

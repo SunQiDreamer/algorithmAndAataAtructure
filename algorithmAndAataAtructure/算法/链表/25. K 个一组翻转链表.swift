@@ -22,7 +22,7 @@ func reverseKGroup(_ head: ListNode?, _ k: Int) -> ListNode? {
     let stack = Stack<Int>()
     
     while cur != nil {
-        if stack.size() == k {
+        if stack.size() == k { // 栈满了，翻转栈中的节点
             
             while !stack.isEmpty() {
                 let val = stack.pop()

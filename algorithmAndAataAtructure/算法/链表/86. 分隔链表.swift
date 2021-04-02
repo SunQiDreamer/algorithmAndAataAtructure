@@ -23,10 +23,10 @@ func partition(_ head: ListNode?, _ x: Int) -> ListNode? {
     while newHead != nil {
         if newHead!.val < x {
             lessThanTail?.next = newHead
-            lessThanTail = newHead
+            lessThanTail = lessThanTail?.next
         } else {
             greatThaTail?.next = newHead
-            greatThaTail = newHead
+            greatThaTail = greatThaTail?.next
         }
         newHead = newHead?.next
     }
@@ -34,9 +34,9 @@ func partition(_ head: ListNode?, _ x: Int) -> ListNode? {
     /*
      * 因为可能出现这样的情况:
      * 原链表倒数第N个节点A的值是>=x的，A后面所有节点的值都是<x的
-     * 然后rTail.next最终其实就是A.next
+     * 然后rTail.next最终其实就是A.next，会出现环，应将greatThaTail?.next置nil
      */
-    greatThaTail?.next = nil
+    greatThaTail?.next = nil // 不加会出现死循环
     lessThanTail?.next = greatThanHead.next
     
     return lessThanHead.next
