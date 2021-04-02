@@ -88,6 +88,7 @@
 		2CCB285D250A6029004F0BDD /* 剑指 Offer 47. 礼物的最大价值.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB285C250A6029004F0BDD /* 剑指 Offer 47. 礼物的最大价值.swift */; };
 		2CCB285F250B4600004F0BDD /* 121. 买卖股票的最佳时机.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB285E250B4600004F0BDD /* 121. 买卖股票的最佳时机.swift */; };
 		2CCB2861250B49A2004F0BDD /* 122. 买卖股票的最佳时机 II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB2860250B49A2004F0BDD /* 122. 买卖股票的最佳时机 II.swift */; };
+		2CCD5F6F2617357C00F58199 /* 94. 二叉树的中序遍历.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCD5F6E2617357C00F58199 /* 94. 二叉树的中序遍历.swift */; };
 		2CD3A5E425071B0700EB78FB /* 572. 另一个树的子树.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD3A5E325071B0700EB78FB /* 572. 另一个树的子树.swift */; };
 		2CD3A5E62507607B00EB78FB /* 242. 有效的字母异位词.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD3A5E52507607B00EB78FB /* 242. 有效的字母异位词.swift */; };
 		2CD3A5E82508A21600EB78FB /* 151. 翻转字符串里的单词.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD3A5E72508A21600EB78FB /* 151. 翻转字符串里的单词.swift */; };
@@ -220,6 +221,7 @@
 		2CCB285C250A6029004F0BDD /* 剑指 Offer 47. 礼物的最大价值.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "剑指 Offer 47. 礼物的最大价值.swift"; sourceTree = "<group>"; };
 		2CCB285E250B4600004F0BDD /* 121. 买卖股票的最佳时机.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "121. 买卖股票的最佳时机.swift"; sourceTree = "<group>"; };
 		2CCB2860250B49A2004F0BDD /* 122. 买卖股票的最佳时机 II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "122. 买卖股票的最佳时机 II.swift"; sourceTree = "<group>"; };
+		2CCD5F6E2617357C00F58199 /* 94. 二叉树的中序遍历.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "94. 二叉树的中序遍历.swift"; sourceTree = "<group>"; };
 		2CD3A5E325071B0700EB78FB /* 572. 另一个树的子树.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "572. 另一个树的子树.swift"; sourceTree = "<group>"; };
 		2CD3A5E52507607B00EB78FB /* 242. 有效的字母异位词.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "242. 有效的字母异位词.swift"; sourceTree = "<group>"; };
 		2CD3A5E72508A21600EB78FB /* 151. 翻转字符串里的单词.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "151. 翻转字符串里的单词.swift"; sourceTree = "<group>"; };
@@ -502,6 +504,7 @@
 		2CFABBD6250BA39F00D03A9B /* 二叉树 */ = {
 			isa = PBXGroup;
 			children = (
+				2CCD5F6E2617357C00F58199 /* 94. 二叉树的中序遍历.swift */,
 				2CFABBD9250C8DCA00D03A9B /* 99. 恢复二叉搜索树.swift */,
 				2C66809325189D2000C0D959 /* 100. 相同的树.swift */,
 				2C6680962518A19400C0D959 /* 101. 对称二叉树.swift */,
@@ -513,14 +516,14 @@
 				2C6680A82518DE4800C0D959 /* 112. 路径总和.swift */,
 				2C6680AB2518E35600C0D959 /* 226. 翻转二叉树.swift */,
 				2CFABBD7250BA3E200D03A9B /* 236. 二叉树的最近公共祖先.swift */,
-				2CFABBDB250C9E2E00D03A9B /* 333.最大BST子树.swift */,
-				2C668090251897FB00C0D959 /* 538. 把二叉搜索树转换为累加树.swift */,
 				2CD9B8412519EEBD00A09EBB /* 257. 二叉树的所有路径.swift */,
+				2CFABBDB250C9E2E00D03A9B /* 333.最大BST子树.swift */,
 				2CD9B8AF2519FE3300A09EBB /* 404. 左叶子之和.swift */,
 				2CD70FF1251B469200DC051B /* 501. 二叉搜索树中的众数.swift */,
-				2CD70FF4251B48F800DC051B /* 617. 合并二叉树.swift */,
 				2CD70FF7251B4ACE00DC051B /* 530. 二叉搜索树的最小绝对差.swift */,
+				2C668090251897FB00C0D959 /* 538. 把二叉搜索树转换为累加树.swift */,
 				2CD70FFA251B523600DC051B /* 543. 二叉树的直径.swift */,
+				2CD70FF4251B48F800DC051B /* 617. 合并二叉树.swift */,
 			);
 			path = "二叉树";
 			sourceTree = "<group>";
@@ -599,6 +602,7 @@
 				2C84C736254C3BCE002E89E8 /* 快速排序.swift in Sources */,
 				2C84C599254A6E02002E89E8 /* 冒泡排序2.swift in Sources */,
 				2C5B537F250B50050004819D /* 72. 编辑距离.swift in Sources */,
+				2CCD5F6F2617357C00F58199 /* 94. 二叉树的中序遍历.swift in Sources */,
 				2CADB1C12514BC1400276DEF /* 455. 分发饼干.swift in Sources */,
 				2C571FA424F6658800E74CB7 /* Stack.swift in Sources */,
 				2C30901A25515A2400EF40DF /* 62. 不同路径.swift in Sources */,

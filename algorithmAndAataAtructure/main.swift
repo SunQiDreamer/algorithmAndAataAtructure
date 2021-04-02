@@ -9,21 +9,37 @@
 import Foundation
 
 
-let node1 = ListNode(1)
-let node2 = ListNode(2)
-let node3 = ListNode(3)
-let node4 = ListNode(5)
-let node5 = ListNode(2)
+//let node1 = ListNode(1)
+//let node2 = ListNode(2)
+//let node3 = ListNode(3)
+//let node4 = ListNode(4)
+//let node5 = ListNode(5)
+//
+//node1.next = node2
+//node2.next = node3
+//node3.next = node4
+//node4.next = node5
 
-node1.next = node2
-node2.next = node3
-node3.next = node4
-node4.next = node5
+//var head = reverseList2(node1)
 
-var head = partition(node1, 3)
+//while head != nil {
+//    print(head?.val ?? 0)
+//    print("-->")
+//    head = head?.next
+//}
 
-while head != nil {
-    print(head?.val ?? 0)
-    print("-->")
-    head = head?.next
-}
+
+let node1 = TreeNode(1)
+let node2 = TreeNode(2)
+let node3 = TreeNode(3)
+let node4 = TreeNode(4)
+let node5 = TreeNode(5)
+
+
+node2.left = node1
+node2.right = node3
+node1.left = node4
+node1.right = node5
+
+
+print(inorderTraversal1(node2))

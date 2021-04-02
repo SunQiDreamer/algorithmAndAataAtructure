@@ -39,6 +39,7 @@ class reverseListxxx {
         }
         
         let newHead = reverseList2(head?.next)
+        // 翻转当前这个节点
         head?.next?.next = head
         head?.next = nil
         
@@ -46,3 +47,23 @@ class reverseListxxx {
     }
 }
 
+// 迭代，头插法
+func reverseList3(_ head: ListNode?) -> ListNode? {
+    if head == nil || head?.next == nil {
+        return head
+    }
+    
+    let newHead: ListNode? = ListNode(0)
+    var cur = head
+    var tmp = newHead?.next
+    
+    while cur != nil {
+        tmp = newHead?.next
+        let newNode = ListNode(cur?.val ?? 0)
+        newHead?.next = newNode
+        newNode.next = tmp
+        cur = cur?.next
+    }
+    return newHead?.next
+    
+}

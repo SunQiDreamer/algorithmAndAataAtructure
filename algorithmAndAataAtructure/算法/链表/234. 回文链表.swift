@@ -28,6 +28,7 @@ func isPalindrome(_ head: ListNode?) -> Bool {
         lH = lH?.next
     }
     
+    // 右边的链表在翻转回来
     reverseList(rOldH)
     return result
 }

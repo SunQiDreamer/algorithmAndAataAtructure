@@ -28,3 +28,18 @@ private func stringByTree(_ root: TreeNode<Int>?, string: inout String) {
         string.append("#")
     }
 }
+
+// 递归
+func isSameTree2(_ p: TreeNode<Int>?, _ q: TreeNode<Int>?) -> Bool {
+    
+    if p == nil || q == nil {
+        return p === q
+    }
+    
+    let leftIsSame = isSameTree2(p?.left, q?.left)
+    let rightIsSame = isSameTree2(p?.right, q?.right)
+
+    let pSame = (p?.val == q?.val)
+
+    return leftIsSame && rightIsSame && pSame
+}
