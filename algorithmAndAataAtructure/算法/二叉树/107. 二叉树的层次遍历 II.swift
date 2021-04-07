@@ -9,37 +9,34 @@
 import Foundation
 
 func levelOrderBottom(_ root: TreeNode<Int>?) -> [[Int]] {
-    if root == nil {
+    guard let root = root else {
         return []
     }
-   
-    var result: [[Int]] = [[root!.val]]
-    var queue: [TreeNode<Int>] = [root!]
+    
+    var queue: [TreeNode<Int>] = [root]
+    var array: [[Int]] = [[root.val]]
+    
     while !queue.isEmpty {
         var size = queue.count
-        
-        var array: [Int] = []
+        var innerArray: [Int] = []
         while size > 0 {
             let node = queue.first
-            queue.remove(at: 0)
+            queue.removeFirst()
             
             if let left = node?.left {
                 queue.append(left)
-                array.append(left.val)
-            }
-            if let right = node?.right {
-                queue.append(right)
-                array.append(right.val)
+                innerArray.append(left.val)
             }
             
+            if let right = node?.right {
+                queue.append(right)
+                innerArray.append(right.val)
+            }
             size -= 1
         }
-
-        if array.count > 0 {
-            result.append(array)
+        if innerArray.count > 0 {
+            array.append(innerArray)
         }
     }
-    
-    result.reverse()
-    return result
+    return array.reversed()
 }

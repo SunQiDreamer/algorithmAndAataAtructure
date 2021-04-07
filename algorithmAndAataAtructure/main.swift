@@ -28,12 +28,11 @@ import Foundation
 //    head = head?.next
 //}
 
-
-let node1 = TreeNode(1)
-let node2 = TreeNode(2)
-let node3 = TreeNode(3)
-let node4 = TreeNode(4)
-let node5 = TreeNode(5)
+let node2 = TreeNode(2, parent: nil)
+let node1 = TreeNode(1, parent: node2)
+let node3 = TreeNode(3, parent: node2)
+let node4 = TreeNode(4, parent: node1)
+let node5 = TreeNode(5, parent: node1)
 
 
 node2.left = node1
@@ -42,4 +41,4 @@ node1.left = node4
 node1.right = node5
 
 
-print(postorder(node2))
+print(hasPathSum(node2, 7))

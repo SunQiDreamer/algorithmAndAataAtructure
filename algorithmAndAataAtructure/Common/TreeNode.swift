@@ -38,7 +38,7 @@ class TreeNode<T> {
         self.val = val
         self.parent = parent
         self.left = nil
-        self.right = self
+        self.right = nil
     }
     
     

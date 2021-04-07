@@ -9,14 +9,10 @@
 import Foundation
 
 func hasPathSum(_ root: TreeNode<Int>?, _ sum: Int) -> Bool {
-    if let root = root {
-        return hasPathSum1(root, sum)
-    } else {
-       return false
+    guard let root = root else {
+        return false
     }
-}
-
-private func hasPathSum1(_ root: TreeNode<Int>, _ sum: Int) -> Bool {
+    
     let min = sum - root.val
     if min == 0 && root.left == nil && root.right == nil {
         return true

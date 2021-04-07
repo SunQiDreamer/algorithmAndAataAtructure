@@ -32,14 +32,12 @@ func findWrongNodes(_ root: TreeNode<Int>?) {
     findWrongNodes(root?.left)
     
     if let prev = prev, let node = root, prev.val > node.val {
-        if prev.val > node.val {
-            second = node
-            
-            if first != nil {
-                return
-            } else {
-                first = prev
-            }
+        second = node
+        
+        if first != nil {
+            return
+        } else {
+            first = prev
         }
     }
     prev = root
