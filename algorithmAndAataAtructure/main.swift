@@ -42,4 +42,4 @@ node1.left = node4
 node1.right = node5
 
 
-print(inorderTraversal1(node2))
+print(postorder(node2))

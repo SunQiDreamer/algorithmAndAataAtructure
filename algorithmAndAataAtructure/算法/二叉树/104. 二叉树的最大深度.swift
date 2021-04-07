@@ -22,10 +22,11 @@ func maxDepth(_ root: TreeNode<Int>?) -> Int {
 
 // 层序遍历
 func maxDepth1(_ root: TreeNode<Int>?) -> Int {
-    if root == nil {
+    guard let root = root else {
         return 0
     }
-    var queue: [TreeNode<Int>] = [root!]
+    
+    var queue: [TreeNode<Int>] = [root]
     
     var deepCount = 0
     while !queue.isEmpty {

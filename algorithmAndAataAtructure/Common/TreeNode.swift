@@ -8,25 +8,38 @@
 
 import Foundation
 
-//class TreeNode<Element> {
-//    var val: Element
-//    var left: TreeNode?
-//    var right: TreeNode?
-//    init(_ val: Element) {
-//        self.val = val
-//        self.left = nil
-//        self.right = nil
-//    }
-//}
-
-
 class TreeNode<T> {
     var val: T
     var left: TreeNode?
     var right: TreeNode?
-    init(_ val: T) {
-        self.val = val
-        self.left = nil
-        self.right = nil
+    var parent: TreeNode?
+    
+    var isLeaf: Bool {
+        left == nil && right == nil
     }
+    
+    var hasTwoChildren: Bool {
+        left != nil && right != nil
+    }
+    
+    var isLeftChild: Bool {
+        parent != nil && self === parent?.left
+    }
+    
+    var isRightChild: Bool {
+        parent != nil && self === parent?.right
+    }
+    
+    convenience init(_ val: T) {
+        self.init(val, parent: nil)
+    }
+    
+    init(_ val: T, parent: TreeNode<T>?) {
+        self.val = val
+        self.parent = parent
+        self.left = nil
+        self.right = self
+    }
+    
+    
 }
