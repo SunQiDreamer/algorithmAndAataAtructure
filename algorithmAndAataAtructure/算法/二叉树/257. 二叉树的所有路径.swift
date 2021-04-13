@@ -8,24 +8,24 @@
 
 import Foundation
 
-var array: [String] = []
 func binaryTreePaths(_ root: TreeNode<Int>?) -> [String] {
+    var array: [String] = []
     let string = ""
-    binaryTreePaths(root, string: string)
+    binaryTreePaths(root, string: string, array: &array)
     return array
 }
 
-func binaryTreePaths(_ root: TreeNode<Int>?, string: String) {
+func binaryTreePaths(_ root: TreeNode<Int>?, string: String, array: inout [String]) {
     
     if let root = root {
         let s =  string + "\(root.val)"
-        if root.left == nil && root.right == nil {
+        if root.isLeaf {
             // 叶子节点
             array.append(s)
         } else {
             let s =  s + "->"
-            binaryTreePaths(root.left, string: s)
-            binaryTreePaths(root.right, string: s)
+            binaryTreePaths(root.left, string: s, array: &array)
+            binaryTreePaths(root.right, string: s, array: &array)
         }
     }
 }

@@ -36,7 +36,7 @@ func maxSubArray1(_ nums: [Int]) -> Int {
     return Int(m)
 }
 
-// 分治
+// 分治（递归）
 func maxSubArray2(_ nums: [Int]) -> Int {
     if nums.count == 0 {
         return 0
@@ -71,12 +71,29 @@ func maxSubArray2(_ nums: [Int], begin: Int, end: Int) -> Int {
     return max(leftMax + rightMax, max(maxSubArray2(nums, begin: begin, end: mid), maxSubArray2(nums, begin: mid, end: end)))
 }
 
-// 动态规划
 func maxSubArray3(_ nums: [Int]) -> Int {
     if nums.count == 0 {
         return 0
     }
-    var dp = nums[0]
+    var dps = Array(repeating: 0, count: nums.count)
+    dps[0] = nums[0]
+    
+    for i in 1..<nums.count {
+        if dps[i - 1] > 0 {
+            dps[i] = dps[i - 1] + nums[i]
+        } else {
+            dps[i] = nums[i]
+        }
+    }
+    return dps.max() ?? 0
+}
+
+// 动态规划改良版，用一个变量代替dp数组
+func maxSubArray4(_ nums: [Int]) -> Int {
+    if nums.count == 0 {
+        return 0
+    }
+    var dp = nums[0]  // 存放每个index的最大子序列和
     var maxValue = dp
     for i in 1..<nums.count {
         if dp >= 0 {

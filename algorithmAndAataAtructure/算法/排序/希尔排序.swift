@@ -25,8 +25,13 @@ class ShellSort: Sort {
     // 按步长进行排序
     private func sort(_ step: Int) {
         for col in 0..<step {
-            for begin in stride(from: col + step, to: array.count - 1, by: step) {
+            for begin in stride(from: col + step, to: array.count, by: step) {
                 // 使用插入排序将步长的序列排序
+                
+                print("begin\(begin)")
+                print("step\(step)")
+                print("=========")
+                
                 var cur = begin
                 while cur > col && array[cur] < array[cur - step] {
                     array.swapAt(cur, cur - step)

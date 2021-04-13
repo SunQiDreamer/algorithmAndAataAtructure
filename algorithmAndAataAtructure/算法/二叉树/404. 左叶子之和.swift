@@ -14,8 +14,8 @@ func sumOfLeftLeaves(_ root: TreeNode<Int>?) -> Int {
     if let root = root {
         sum = sumOfLeftLeaves(root.left) + sumOfLeftLeaves(root.right)
         
-        if root.left != nil && root.left?.left == nil && root.left?.right == nil {
-            sum += root.left?.val ?? 0
+        if let left = root.left, left.isLeaf {
+            sum += left.val
         }
     }
     return sum

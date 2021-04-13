@@ -8,7 +8,7 @@
 
 import Foundation
 
-// 每次发现比待插入元素大的元素，将改元素往后挪一位，将待插入元素插入到合适的位置
+// 每次发现比待插入元素大的元素，将该元素往后挪一位，将待插入元素插入到合适的位置(优化了交换次数)
 class InsertionSort2: Sort {
     typealias T = Int
     var array: [Int] = []

@@ -8,7 +8,7 @@
 
 import Foundation
 
-// 利用二分法找逆序对，将待插入元素插入到合适位置，减少比较的次数
+// 利用二分法找逆序对，将待插入元素插入到合适位置，减少比较的次数（优化了比较次数）
 class InsertionSort3: Sort {
     typealias T = Int
     var array: [Int] = []
@@ -29,9 +29,10 @@ class InsertionSort3: Sort {
      * @param source
      * @param dest
      */
-    func insert(_ source: Int, dest: Int) {
+    func insert(_ source: Int, dest: Int) { // dest <= source
         let v = array[source]
         for i in dest..<source {
+            // source与dest之间的元素，依次往后移一位
             array[i] = array[i - 1]
         }
         array[dest] = v
@@ -57,5 +58,4 @@ class InsertionSort3: Sort {
         }
         return begin
     }
-    
 }
