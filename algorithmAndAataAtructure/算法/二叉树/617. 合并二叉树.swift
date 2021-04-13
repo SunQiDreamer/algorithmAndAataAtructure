@@ -9,23 +9,19 @@
 import Foundation
 
 func mergeTrees(_ t1: TreeNode<Int>?, _ t2: TreeNode<Int>?) -> TreeNode<Int>? {
-    
     if t1 == nil {
         return t2
     }
-    
     if t2 == nil {
         return t1
     }
     
     let node = TreeNode<Int>(0)
     node.left = mergeTrees(t1?.left, t2?.left)
-    
-    let val1 = t1?.val ?? 0
-    let val2 = t2?.val ?? 0
-    node.val = val1 + val2
-    
     node.right = mergeTrees(t1?.right, t2?.right)
     
+    if let val1 = t1?.val, let val2 = t2?.val {
+        node.val = val1 + val2
+    }
     return node
 }

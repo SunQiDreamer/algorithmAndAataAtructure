@@ -23,8 +23,8 @@ func longestPalindrome(_ s: String) -> String {
     let strings = Array(s)
     
     var dp: [[Bool]] = Array(repeating: Array(repeating: false, count: s.count), count: s.count)
-    var begin = 0
-    var maxLength = 1
+    var begin = 0 //最大回文子串的开始index
+    var maxLength = 1 //最大回文子串的最大长度
     
     for i in (0..<s.count - 1).reversed() {
         for j in i..<s.count {

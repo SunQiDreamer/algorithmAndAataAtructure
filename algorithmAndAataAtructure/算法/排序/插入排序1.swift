@@ -13,7 +13,6 @@ class InsertionSort: Sort {
     var array: [Int] = []
     
     func sort() -> [Int] {
-        
         for begin in 1..<array.count {
             var cur = begin
             
