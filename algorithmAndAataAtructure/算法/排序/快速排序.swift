@@ -71,6 +71,7 @@ class QuickSort: Sort {
             }
         }
         array[newBegin] = pivot
+        //  返回锚点的位置
         return newBegin
     }
 }
