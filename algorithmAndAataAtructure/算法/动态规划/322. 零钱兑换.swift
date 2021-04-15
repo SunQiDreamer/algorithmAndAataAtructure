@@ -6,15 +6,28 @@
 //  Copyright © 2020 孙琦. All rights reserved.
 //  https://leetcode-cn.com/problems/coin-change/
 
+/*
+ 给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回 -1。
+
+ 你可以认为每种硬币的数量是无限的。
+ */
+
 import Foundation
 
 // 暴力递归
 func coinChange(_ coins: [Int], _ amount: Int) -> Int {
+    if amount == 0 {
+        return 0
+    }
     let innerCoins = coins.sorted()
     if amount < innerCoins.first ?? 0 {
         return -1
     }
-    return coinChange_(innerCoins, amount)
+    let count = coinChange_(innerCoins, amount)
+    if count == Int.max {
+        return -1
+    }
+    return count
 }
 
 func coinChange_(_ coins: [Int], _ amount: Int) -> Int {
@@ -28,10 +41,13 @@ func coinChange_(_ coins: [Int], _ amount: Int) -> Int {
     
     var minCount = Int.max
     for coin in coins {
-        
         minCount = min(minCount, coinChange_(coins, amount - coin))
-        
     }
+    
+    if minCount == Int.max {
+        return minCount
+    }
+
     return minCount + 1
 }
 
@@ -45,11 +61,10 @@ func coinChange1(_ coins: [Int], _ amount: Int) -> Int {
     if amount < innerCoins.first ?? 0 {
         return -1
     }
-    
     if innerCoins.contains(amount) {
         return 1
     }
-    
+    // dp数组存放的是从0到amount之间的金额，需要几枚硬币
     var dp: [Int] = Array(repeating: -1, count: amount + 1)
     
     for coin in coins {
@@ -58,7 +73,7 @@ func coinChange1(_ coins: [Int], _ amount: Int) -> Int {
         }
     }
     
-    let count = coinChange1(coins, amount, dp: &dp)
+    let count = coinChange1(innerCoins, amount, dp: &dp)
     return (count == Int.max) ? -1 : count
 }
 
@@ -67,7 +82,7 @@ func coinChange1(_ coins: [Int], _ amount: Int, dp: inout [Int]) -> Int {
         return Int.max
     }
     var minCount = Int.max
-    if dp[amount] == -1 {
+    if dp[amount] == -1 { // 该数额之前还没有计算过
         for coin in coins {
             minCount = min(minCount, coinChange1(coins, amount - coin, dp: &dp))
         }

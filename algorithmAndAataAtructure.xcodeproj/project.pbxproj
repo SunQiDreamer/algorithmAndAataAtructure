@@ -10,6 +10,12 @@
 		2C2B517B255A3E1D007E2007 /* 9. 回文数.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B517A255A3E1D007E2007 /* 9. 回文数.swift */; };
 		2C3090172551579100EF40DF /* 64. 最小路径和.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3090162551579100EF40DF /* 64. 最小路径和.swift */; };
 		2C30901A25515A2400EF40DF /* 62. 不同路径.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C30901925515A2400EF40DF /* 62. 不同路径.swift */; };
+		2C35BB342626973C0088C85F /* 208. 实现 Trie (前缀树).swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35BB332626973C0088C85F /* 208. 实现 Trie (前缀树).swift */; };
+		2C35BB372626DE140088C85F /* 79. 单词搜索.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35BB362626DE140088C85F /* 79. 单词搜索.swift */; };
+		2C35BB3A2626ED990088C85F /* 139. 单词拆分.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35BB392626ED990088C85F /* 139. 单词拆分.swift */; };
+		2C35BB3D262716410088C85F /* 98. 验证二叉搜索树.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35BB3C262716410088C85F /* 98. 验证二叉搜索树.swift */; };
+		2C35BB4126271A910088C85F /* 20. 有效的括号.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35BB4026271A910088C85F /* 20. 有效的括号.swift */; };
+		2C35BB4926281AD30088C85F /* 96. 不同的二叉搜索树.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35BB4826281AD30088C85F /* 96. 不同的二叉搜索树.swift */; };
 		2C4F1D4D2515FF1800BE25FB /* 300. 最长上升子序列.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F1D4C2515FF1800BE25FB /* 300. 最长上升子序列.swift */; };
 		2C4F1D502516123000BE25FB /* 1143. 最长公共子序列.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F1D4F2516123000BE25FB /* 1143. 最长公共子序列.swift */; };
 		2C571F7C24F3AB2600E74CB7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F7B24F3AB2600E74CB7 /* main.swift */; };
@@ -142,6 +148,12 @@
 		2C2B517A255A3E1D007E2007 /* 9. 回文数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "9. 回文数.swift"; sourceTree = "<group>"; };
 		2C3090162551579100EF40DF /* 64. 最小路径和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "64. 最小路径和.swift"; sourceTree = "<group>"; };
 		2C30901925515A2400EF40DF /* 62. 不同路径.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "62. 不同路径.swift"; sourceTree = "<group>"; };
+		2C35BB332626973C0088C85F /* 208. 实现 Trie (前缀树).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "208. 实现 Trie (前缀树).swift"; sourceTree = "<group>"; };
+		2C35BB362626DE140088C85F /* 79. 单词搜索.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "79. 单词搜索.swift"; sourceTree = "<group>"; };
+		2C35BB392626ED990088C85F /* 139. 单词拆分.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "139. 单词拆分.swift"; sourceTree = "<group>"; };
+		2C35BB3C262716410088C85F /* 98. 验证二叉搜索树.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "98. 验证二叉搜索树.swift"; sourceTree = "<group>"; };
+		2C35BB4026271A910088C85F /* 20. 有效的括号.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "20. 有效的括号.swift"; sourceTree = "<group>"; };
+		2C35BB4826281AD30088C85F /* 96. 不同的二叉搜索树.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "96. 不同的二叉搜索树.swift"; sourceTree = "<group>"; };
 		2C4F1D4C2515FF1800BE25FB /* 300. 最长上升子序列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "300. 最长上升子序列.swift"; sourceTree = "<group>"; };
 		2C4F1D4F2516123000BE25FB /* 1143. 最长公共子序列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1143. 最长公共子序列.swift"; sourceTree = "<group>"; };
 		2C571F7824F3AB2600E74CB7 /* algorithmAndAataAtructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithmAndAataAtructure; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -397,6 +409,7 @@
 		2C571FA024F6627100E74CB7 /* 栈、队列 */ = {
 			isa = PBXGroup;
 			children = (
+				2C35BB4026271A910088C85F /* 20. 有效的括号.swift */,
 				2C571FA124F6645500E74CB7 /* 155. 最小栈.swift */,
 				2C571FA524F6994400E74CB7 /* 239. 滑动窗口最大值.swift */,
 				2C571FA924F7876A00E74CB7 /* 654. 最大二叉树.swift */,
@@ -472,8 +485,10 @@
 				2C30901925515A2400EF40DF /* 62. 不同路径.swift */,
 				2C3090162551579100EF40DF /* 64. 最小路径和.swift */,
 				2C5B537E250B50050004819D /* 72. 编辑距离.swift */,
+				2C35BB4826281AD30088C85F /* 96. 不同的二叉搜索树.swift */,
 				2CCB285E250B4600004F0BDD /* 121. 买卖股票的最佳时机.swift */,
 				2CCB2860250B49A2004F0BDD /* 122. 买卖股票的最佳时机 II.swift */,
+				2C35BB392626ED990088C85F /* 139. 单词拆分.swift */,
 				2C4F1D4C2515FF1800BE25FB /* 300. 最长上升子序列.swift */,
 				2CADB1D02514BDDA00276DEF /* 322. 零钱兑换.swift */,
 				2C4F1D4F2516123000BE25FB /* 1143. 最长公共子序列.swift */,
@@ -505,6 +520,7 @@
 			isa = PBXGroup;
 			children = (
 				2CCD5F6E2617357C00F58199 /* 94. 二叉树的中序遍历.swift */,
+				2C35BB3C262716410088C85F /* 98. 验证二叉搜索树.swift */,
 				2CFABBD9250C8DCA00D03A9B /* 99. 恢复二叉搜索树.swift */,
 				2C66809325189D2000C0D959 /* 100. 相同的树.swift */,
 				2C6680962518A19400C0D959 /* 101. 对称二叉树.swift */,
@@ -514,6 +530,7 @@
 				2C6680A22518D97000C0D959 /* 110. 平衡二叉树.swift */,
 				2C6680A52518DBAF00C0D959 /* 111. 二叉树的最小深度.swift */,
 				2C6680A82518DE4800C0D959 /* 112. 路径总和.swift */,
+				2C35BB332626973C0088C85F /* 208. 实现 Trie (前缀树).swift */,
 				2C6680AB2518E35600C0D959 /* 226. 翻转二叉树.swift */,
 				2CFABBD7250BA3E200D03A9B /* 236. 二叉树的最近公共祖先.swift */,
 				2CD9B8412519EEBD00A09EBB /* 257. 二叉树的所有路径.swift */,
@@ -532,8 +549,9 @@
 			isa = PBXGroup;
 			children = (
 				2CFABBDE250CBF2300D03A9B /* 17. 电话号码的字母组合.swift */,
-				2CFABBE0250CD86700D03A9B /* 46. 全排列.swift */,
 				2CFABBE2250CE29200D03A9B /* 22. 括号生成.swift */,
+				2CFABBE0250CD86700D03A9B /* 46. 全排列.swift */,
+				2C35BB362626DE140088C85F /* 79. 单词搜索.swift */,
 			);
 			path = DFS;
 			sourceTree = "<group>";
@@ -598,6 +616,7 @@
 			files = (
 				2C571F8B24F50BA200E74CB7 /* Swap.swift in Sources */,
 				2C84C74E254D53B7002E89E8 /* UnionFind_QU_R_PC.swift in Sources */,
+				2C35BB372626DE140088C85F /* 79. 单词搜索.swift in Sources */,
 				2CD6F7BF2510E4280091F223 /* 11. 盛最多水的容器.swift in Sources */,
 				2C84C736254C3BCE002E89E8 /* 快速排序.swift in Sources */,
 				2C84C599254A6E02002E89E8 /* 冒泡排序2.swift in Sources */,
@@ -606,6 +625,7 @@
 				2CADB1C12514BC1400276DEF /* 455. 分发饼干.swift in Sources */,
 				2C571FA424F6658800E74CB7 /* Stack.swift in Sources */,
 				2C30901A25515A2400EF40DF /* 62. 不同路径.swift in Sources */,
+				2C35BB3A2626ED990088C85F /* 139. 单词拆分.swift in Sources */,
 				2CFABBD5250B696800D03A9B /* 5. 最长回文子串.swift in Sources */,
 				2CFABBDF250CBF2300D03A9B /* 17. 电话号码的字母组合.swift in Sources */,
 				2C571F9D24F6324B00E74CB7 /* 86. 分隔链表.swift in Sources */,
@@ -662,8 +682,10 @@
 				2C84C74B254D521E002E89E8 /* UnionFind_QU_R.swift in Sources */,
 				2C6680A02518D57300C0D959 /* 108. 将有序数组转换为二叉搜索树.swift in Sources */,
 				2CD9B8422519EEBD00A09EBB /* 257. 二叉树的所有路径.swift in Sources */,
+				2C35BB4126271A910088C85F /* 20. 有效的括号.swift in Sources */,
 				2CADB1D42514BE0300276DEF /* 518. 零钱兑换 II.swift in Sources */,
 				2C84C73E254D35B8002E89E8 /* UnionFind.swift in Sources */,
+				2C35BB3D262716410088C85F /* 98. 验证二叉搜索树.swift in Sources */,
 				2C2B517B255A3E1D007E2007 /* 9. 回文数.swift in Sources */,
 				2CFABBDC250C9E2E00D03A9B /* 333.最大BST子树.swift in Sources */,
 				2CD6F7B92510D2C70091F223 /* 7. 整数反转.swift in Sources */,
@@ -684,6 +706,7 @@
 				2CD6F7C3251240B50091F223 /* 25. K 个一组翻转链表.swift in Sources */,
 				2CD6F7C5251240EE0091F223 /* 21. 合并两个有序链表.swift in Sources */,
 				2C571F8624F4D4FE00E74CB7 /* 88. 合并两个有序数组.swift in Sources */,
+				2C35BB342626973C0088C85F /* 208. 实现 Trie (前缀树).swift in Sources */,
 				2C84C748254D4FA8002E89E8 /* UnionFind_QU_S.swift in Sources */,
 				2C6680972518A19400C0D959 /* 101. 对称二叉树.swift in Sources */,
 				2C571F9F24F63F5900E74CB7 /* 234. 回文链表.swift in Sources */,
@@ -712,6 +735,7 @@
 				2C66809A2518A6B800C0D959 /* 104. 二叉树的最大深度.swift in Sources */,
 				2C66808425188BBD00C0D959 /* 83. 删除排序链表中的重复元素.swift in Sources */,
 				2C84C5A3254AB0DB002E89E8 /* 堆排序.swift in Sources */,
+				2C35BB4926281AD30088C85F /* 96. 不同的二叉搜索树.swift in Sources */,
 				2CA10776255285860086F08D /* 剑指 Offer 10- I. 斐波那契数列.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
