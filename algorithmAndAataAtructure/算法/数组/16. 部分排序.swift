@@ -1,5 +1,5 @@
 //
-//  16.16. 部分排序.swift
+//  16. 部分排序.swift
 //  algorithmAndAataAtructure
 //
 //  Created by 孙琦 on 2020/8/25.
