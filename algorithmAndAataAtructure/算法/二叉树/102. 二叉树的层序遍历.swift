@@ -12,6 +12,34 @@
 
 import Foundation
 
+// 迭代
 func levelOrder(_ root: TreeNode<Int>?) -> [[Int]] {
+    guard let root = root else {
         return []
+    }
+    var result: [[Int]] = []
+    var queue: [TreeNode<Int>] = []
+    queue.append(root)
+    while !queue.isEmpty {
+        var size = queue.count
+        var array: [Int] = []
+        while size > 0 {
+            if let node = queue.first {
+                array.append(node.val)
+                
+                if let left = node.left {
+                    queue.append(left)
+                }
+                
+                if let right = node.right {
+                    queue.append(right)
+                }
+            }
+            queue.remove(at: 0)
+            size -= 1
+        }
+        result.append(array)
+    }
+    return result
 }
+
