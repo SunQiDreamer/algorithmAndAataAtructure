@@ -36,6 +36,8 @@
 		2C51974C26289926009297DC /* 85. 最大矩形.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C51974B26289926009297DC /* 85. 最大矩形.swift */; };
 		2C51974F2628997B009297DC /* 102. 二叉树的层序遍历.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C51974E2628997B009297DC /* 102. 二叉树的层序遍历.swift */; };
 		2C519752262899E2009297DC /* 105. 从前序与中序遍历序列构造二叉树.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C519751262899E2009297DC /* 105. 从前序与中序遍历序列构造二叉树.swift */; };
+		2C5197552629D6B9009297DC /* 51. N 皇后.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5197542629D6B9009297DC /* 51. N 皇后.swift */; };
+		2C5197582629D6E0009297DC /* 52. N皇后 II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5197572629D6E0009297DC /* 52. N皇后 II.swift */; };
 		2C571F7C24F3AB2600E74CB7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F7B24F3AB2600E74CB7 /* main.swift */; };
 		2C571F8624F4D4FE00E74CB7 /* 88. 合并两个有序数组.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F8524F4D4FE00E74CB7 /* 88. 合并两个有序数组.swift */; };
 		2C571F8824F4ED7900E74CB7 /* 75. 颜色分类.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F8724F4ED7900E74CB7 /* 75. 颜色分类.swift */; };
@@ -192,6 +194,8 @@
 		2C51974B26289926009297DC /* 85. 最大矩形.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "85. 最大矩形.swift"; sourceTree = "<group>"; };
 		2C51974E2628997B009297DC /* 102. 二叉树的层序遍历.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "102. 二叉树的层序遍历.swift"; sourceTree = "<group>"; };
 		2C519751262899E2009297DC /* 105. 从前序与中序遍历序列构造二叉树.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "105. 从前序与中序遍历序列构造二叉树.swift"; sourceTree = "<group>"; };
+		2C5197542629D6B9009297DC /* 51. N 皇后.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "51. N 皇后.swift"; sourceTree = "<group>"; };
+		2C5197572629D6E0009297DC /* 52. N皇后 II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "52. N皇后 II.swift"; sourceTree = "<group>"; };
 		2C571F7824F3AB2600E74CB7 /* algorithmAndAataAtructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithmAndAataAtructure; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C571F7B24F3AB2600E74CB7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2C571F8524F4D4FE00E74CB7 /* 88. 合并两个有序数组.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "88. 合并两个有序数组.swift"; sourceTree = "<group>"; };
@@ -343,6 +347,8 @@
 			children = (
 				2C51972D26289410009297DC /* 39. 组合总和.swift */,
 				2C51974526289750009297DC /* 78. 子集.swift */,
+				2C5197542629D6B9009297DC /* 51. N 皇后.swift */,
+				2C5197572629D6E0009297DC /* 52. N皇后 II.swift */,
 			);
 			path = "回溯+剪枝";
 			sourceTree = "<group>";
@@ -701,6 +707,7 @@
 				2CD9B8B02519FE3400A09EBB /* 404. 左叶子之和.swift in Sources */,
 				2CD6F7AD250F89B30091F223 /* 1. 两数之和.swift in Sources */,
 				2C571FA824F754FF00E74CB7 /* Deque.swift in Sources */,
+				2C5197582629D6E0009297DC /* 52. N皇后 II.swift in Sources */,
 				2CD3A5E82508A21600EB78FB /* 151. 翻转字符串里的单词.swift in Sources */,
 				2CD6F7CD251241780091F223 /* 237. 删除链表中的节点.swift in Sources */,
 				2CCB285F250B4600004F0BDD /* 121. 买卖股票的最佳时机.swift in Sources */,
@@ -804,6 +811,7 @@
 				2C835040255026D500AEFC97 /* Edge.swift in Sources */,
 				2C571FA624F6994400E74CB7 /* 239. 滑动窗口最大值.swift in Sources */,
 				2CD70FFB251B523600DC051B /* 543. 二叉树的直径.swift in Sources */,
+				2C5197552629D6B9009297DC /* 51. N 皇后.swift in Sources */,
 				2CD6F7CB251241530091F223 /* 206. 反转链表.swift in Sources */,
 				2CFABBDA250C8DCA00D03A9B /* 99. 恢复二叉搜索树.swift in Sources */,
 				2CFABBE1250CD86700D03A9B /* 46. 全排列.swift in Sources */,
