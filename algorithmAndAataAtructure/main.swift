@@ -8,4 +8,5 @@
 
 import Foundation
 
-print(subsets([1, 2, 3]))
+var nums = [1, 2, 3]
+nextPermutation(&nums)
