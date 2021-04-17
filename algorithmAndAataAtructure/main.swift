@@ -7,6 +7,4 @@
 //
 
 import Foundation
-
-var nums = [1, 2, 3]
-nextPermutation(&nums)
+print(merge([[1,4],[0,2],[3,5]]))

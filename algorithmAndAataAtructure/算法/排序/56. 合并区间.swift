@@ -13,5 +13,30 @@
 import Foundation
 
 func merge(_ intervals: [[Int]]) -> [[Int]] {
-    return []
+    if intervals.count < 2 {
+        return intervals
+    }
+    
+    let sorts = intervals.sorted { (first, second) -> Bool in
+        return (first[0] - second[0]) < 0
+    }
+    
+    var last: [Int] = []
+    var result: [[Int]] = []
+    for interval in sorts {
+        if last.count > 0, last[1] >= interval[0] {
+            if result.count > 0 {
+                result.removeLast()
+            }
+            let minFirst = min(last[0], interval[0])
+            let maxSecond = max(last[1], interval[1])
+            result.append([minFirst, maxSecond])
+            last = [minFirst, maxSecond]
+        } else {
+            result.append(interval)
+            last = interval
+        }
+        
+    }
+    return result
 }
