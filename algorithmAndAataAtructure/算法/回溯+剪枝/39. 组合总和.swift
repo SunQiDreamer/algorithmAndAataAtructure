@@ -20,5 +20,18 @@
 import Foundation
 
 func combinationSum(_ candidates: [Int], _ target: Int) -> [[Int]] {
-        return [[]]
+    var result: [[Int]] = [[]]
+    for num in candidates {
+        for var arr in result {
+            arr.append(num)
+            
+            let r = arr.reduce(0) { (r, n) -> Int in
+                r + n
+            }
+            if r == target {
+                result.append(arr)
+            }
+        }
+    }
+    return result
 }

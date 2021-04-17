@@ -15,5 +15,12 @@
 import Foundation
 
 func subsets(_ nums: [Int]) -> [[Int]] {
-    return []
+    var result: [[Int]] = [[]]
+    for num in nums {
+        for var arr in result {
+            arr.append(num)
+            result.append(arr)
+        }
+    }
+    return result
 }
