@@ -7,4 +7,4 @@
 //
 
 import Foundation
-print(merge([[1,4],[0,2],[3,5]]))
+print(climbStairs(5))
