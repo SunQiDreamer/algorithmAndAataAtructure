@@ -7,4 +7,5 @@
 //
 
 import Foundation
-print(climbStairs(5))
+
+print(convert("PAYPALISHIRING", 3))
