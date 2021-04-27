@@ -1,18 +1,18 @@
-//
-//  146. LRU缓存机制.swift
-//  algorithmAndAataAtructure
-//
-//  Created by 孙琦 on 2020/9/15.
-//  Copyright © 2020 孙琦. All rights reserved.
-//  https://leetcode-cn.com/problems/lru-cache/
+                                                        //
+                                                        //  146. LRU缓存机制.swift
+                                                        //  algorithmAndAataAtructure
+                                                        //
+                                                        //  Created by 孙琦 on 2020/9/15.
+                                                        //  Copyright © 2020 孙琦. All rights reserved.
+                                                        //  https://leetcode-cn.com/problems/lru-cache/
 
-import Foundation
+                                                        import Foundation
 
-// 哈希表+双向链表
-class LRUCache {
-    private var map: [Int: Node1<Int>] = [:]
-    var capacity = 0
-    var first: Node1<Int>?
+                                                        // 哈希表+双向链表
+                                                        class LRUCache {
+                                                            private var map: [Int: Node1<Int>] = [:]
+                                                            var capacity = 0
+                                                            var first: Node1<Int>?
     var last: Node1<Int>?
 
     init(_ capacity: Int) {
