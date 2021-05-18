@@ -37,6 +37,7 @@
 		2C519752262899E2009297DC /* 105. 从前序与中序遍历序列构造二叉树.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C519751262899E2009297DC /* 105. 从前序与中序遍历序列构造二叉树.swift */; };
 		2C5197552629D6B9009297DC /* 51. N 皇后.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5197542629D6B9009297DC /* 51. N 皇后.swift */; };
 		2C5197582629D6E0009297DC /* 52. N皇后 II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5197572629D6E0009297DC /* 52. N皇后 II.swift */; };
+		2C51975C263866D7009297DC /* 28. 实现 strStr().swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C51975B263866D7009297DC /* 28. 实现 strStr().swift */; };
 		2C571F7C24F3AB2600E74CB7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F7B24F3AB2600E74CB7 /* main.swift */; };
 		2C571F8624F4D4FE00E74CB7 /* 88. 合并两个有序数组.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F8524F4D4FE00E74CB7 /* 88. 合并两个有序数组.swift */; };
 		2C571F8824F4ED7900E74CB7 /* 75. 颜色分类.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571F8724F4ED7900E74CB7 /* 75. 颜色分类.swift */; };
@@ -198,6 +199,7 @@
 		2C519751262899E2009297DC /* 105. 从前序与中序遍历序列构造二叉树.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "105. 从前序与中序遍历序列构造二叉树.swift"; sourceTree = "<group>"; };
 		2C5197542629D6B9009297DC /* 51. N 皇后.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "51. N 皇后.swift"; sourceTree = "<group>"; };
 		2C5197572629D6E0009297DC /* 52. N皇后 II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "52. N皇后 II.swift"; sourceTree = "<group>"; };
+		2C51975B263866D7009297DC /* 28. 实现 strStr().swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "28. 实现 strStr().swift"; sourceTree = "<group>"; };
 		2C571F7824F3AB2600E74CB7 /* algorithmAndAataAtructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithmAndAataAtructure; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C571F7B24F3AB2600E74CB7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2C571F8524F4D4FE00E74CB7 /* 88. 合并两个有序数组.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "88. 合并两个有序数组.swift"; sourceTree = "<group>"; };
@@ -492,7 +494,11 @@
 				2CD3A5E52507607B00EB78FB /* 242. 有效的字母异位词.swift */,
 				2CD3A5E325071B0700EB78FB /* 572. 另一个树的子树.swift */,
 				2C571FB224F7F0B100E74CB7 /* 面试题 01.09. 字符串轮转.swift */,
+<<<<<<< HEAD
 				2C96B4C9262EFAD600FCF99A /* 28. 实现 strStr().swift */,
+=======
+				2C51975B263866D7009297DC /* 28. 实现 strStr().swift */,
+>>>>>>> 8d5b903c516b1b262f141c6de3b00ae2b88c09be
 			);
 			path = "字符串";
 			sourceTree = "<group>";
@@ -734,7 +740,11 @@
 				2C84C68D254BF2B6002E89E8 /* 插入排序1.swift in Sources */,
 				2C571F8D24F5119400E74CB7 /* 16. 部分排序.swift in Sources */,
 				2C84C745254D49AD002E89E8 /* UnionFind_QU.swift in Sources */,
+<<<<<<< HEAD
 				2C96B4CA262EFAD600FCF99A /* 28. 实现 strStr().swift in Sources */,
+=======
+				2C51975C263866D7009297DC /* 28. 实现 strStr().swift in Sources */,
+>>>>>>> 8d5b903c516b1b262f141c6de3b00ae2b88c09be
 				2CD6F7B525108EE80091F223 /* 54. 螺旋矩阵.swift in Sources */,
 				2C571F9724F521B000E74CB7 /* ListNode.swift in Sources */,
 				2C84C596254A63C0002E89E8 /* Sort.swift in Sources */,

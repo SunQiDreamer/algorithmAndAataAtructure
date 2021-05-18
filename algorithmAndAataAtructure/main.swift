@@ -8,4 +8,8 @@
 
 import Foundation
 
+<<<<<<< HEAD
 //print(strStr("abc", "c"))
+=======
+print(strStr("abcdefg", "abd"))
+>>>>>>> 8d5b903c516b1b262f141c6de3b00ae2b88c09be

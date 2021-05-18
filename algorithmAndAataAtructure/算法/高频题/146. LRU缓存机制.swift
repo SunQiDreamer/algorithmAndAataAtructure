@@ -5,21 +5,18 @@
 //  Created by 孙琦 on 2020/9/15.
 //  Copyright © 2020 孙琦. All rights reserved.
 //  https://leetcode-cn.com/problems/lru-cache/
-
 import Foundation
-
 // 哈希表+双向链表
 class LRUCache {
     private var map: [Int: LRUNode<Int>] = [:]
     var capacity = 0
     var first: LRUNode<Int>?
     var last: LRUNode<Int>?
-
+    
     init(_ capacity: Int) {
         self.capacity = capacity
         first = LRUNode<Int>()
         last = LRUNode<Int>()
-        
         first?.next = last
         last?.prev = first
     }
@@ -28,9 +25,7 @@ class LRUCache {
         if let node = map[key] {
             removeNode(node)
             addAfterFirst(node)
-            
             return node.value ?? -1
-            
         } else {
             return -1
         }
@@ -68,12 +63,10 @@ class LRUCache {
         // node与first.next
         node.next = first?.next
         first?.next?.prev = node
-        
         // node与first
         first?.next = node
         node.prev = first
     }
-    
     
     class LRUNode<Element> {
         var key: Element?
@@ -85,7 +78,6 @@ class LRUCache {
             self.key = key
             self.value = value
         }
-        
         init() {
             
         }
