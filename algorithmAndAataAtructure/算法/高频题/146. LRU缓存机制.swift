@@ -10,15 +10,15 @@ import Foundation
 
 // 哈希表+双向链表
 class LRUCache {
-    private var map: [Int: Node1<Int>] = [:]
+    private var map: [Int: LRUNode<Int>] = [:]
     var capacity = 0
-    var first: Node1<Int>?
-    var last: Node1<Int>?
+    var first: LRUNode<Int>?
+    var last: LRUNode<Int>?
 
     init(_ capacity: Int) {
         self.capacity = capacity
-        first = Node1<Int>()
-        last = Node1<Int>()
+        first = LRUNode<Int>()
+        last = LRUNode<Int>()
         
         first?.next = last
         last?.prev = first
@@ -51,20 +51,20 @@ class LRUCache {
                     removeNode(removeN.value)
                 }
             }
-            let node = Node1(key, value: value)
+            let node = LRUNode(key, value: value)
             map[key] = node
             addAfterFirst(node)
         }
     }
     
     /// 删除链表中的节点
-    private func removeNode(_ node: Node1<Int>) {
+    private func removeNode(_ node: LRUNode<Int>) {
         node.prev?.next = node.next
         node.next?.prev = node.prev
     }
     
     // 最近使用的节点，添加到链表的first的next
-    private func addAfterFirst(_ node: Node1<Int>) {
+    private func addAfterFirst(_ node: LRUNode<Int>) {
         // node与first.next
         node.next = first?.next
         first?.next?.prev = node
@@ -73,20 +73,21 @@ class LRUCache {
         first?.next = node
         node.prev = first
     }
-}
-
-class Node1<Element> {
-    var key: Element?
-    var value: Element?
-    var prev: Node1?
-    var next: Node1?
     
-    init(_ key: Element, value: Element) {
-        self.key = key
-        self.value = value
-    }
     
-    init() {
+    class LRUNode<Element> {
+        var key: Element?
+        var value: Element?
+        var prev: LRUNode?
+        var next: LRUNode?
         
+        init(_ key: Element, value: Element) {
+            self.key = key
+            self.value = value
+        }
+        
+        init() {
+            
+        }
     }
 }

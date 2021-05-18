@@ -36,6 +36,7 @@ func convert(_ s: String, _ numRows: Int) -> String {
     for c in Array(s) {
         rows[curRow].append(c)
         if (curRow == 0 || curRow == numRows - 1) {
+            // 改变方向
             goingDown = !goingDown
         }
         

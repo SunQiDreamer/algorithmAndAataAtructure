@@ -8,4 +8,4 @@
 
 import Foundation
 
-print(convert("PAYPALISHIRING", 3))
+//print(strStr("abc", "c"))

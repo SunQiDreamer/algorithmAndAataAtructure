@@ -105,6 +105,7 @@
 		2C8F5D35262B0A7E0049E514 /* 4. 寻找两个正序数组的中位数.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F5D34262B0A7E0049E514 /* 4. 寻找两个正序数组的中位数.swift */; };
 		2C96B477262DA3BC00FCF99A /* 27. 移除元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C96B476262DA3BC00FCF99A /* 27. 移除元素.swift */; };
 		2C96B47B262DAC1A00FCF99A /* 6. Z 字形变换.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C96B47A262DAC1A00FCF99A /* 6. Z 字形变换.swift */; };
+		2C96B4CA262EFAD600FCF99A /* 28. 实现 strStr().swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C96B4C9262EFAD600FCF99A /* 28. 实现 strStr().swift */; };
 		2CA10776255285860086F08D /* 剑指 Offer 10- I. 斐波那契数列.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA10775255285860086F08D /* 剑指 Offer 10- I. 斐波那契数列.swift */; };
 		2CADB1C12514BC1400276DEF /* 455. 分发饼干.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADB1C02514BC1400276DEF /* 455. 分发饼干.swift */; };
 		2CADB1C52514BC5F00276DEF /* 452. 用最少数量的箭引爆气球.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADB1C42514BC5F00276DEF /* 452. 用最少数量的箭引爆气球.swift */; };
@@ -266,6 +267,7 @@
 		2C8F5D34262B0A7E0049E514 /* 4. 寻找两个正序数组的中位数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4. 寻找两个正序数组的中位数.swift"; sourceTree = "<group>"; };
 		2C96B476262DA3BC00FCF99A /* 27. 移除元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "27. 移除元素.swift"; sourceTree = "<group>"; };
 		2C96B47A262DAC1A00FCF99A /* 6. Z 字形变换.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6. Z 字形变换.swift"; sourceTree = "<group>"; };
+		2C96B4C9262EFAD600FCF99A /* 28. 实现 strStr().swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "28. 实现 strStr().swift"; sourceTree = "<group>"; };
 		2CA10775255285860086F08D /* 剑指 Offer 10- I. 斐波那契数列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "剑指 Offer 10- I. 斐波那契数列.swift"; sourceTree = "<group>"; };
 		2CADB1C02514BC1400276DEF /* 455. 分发饼干.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "455. 分发饼干.swift"; sourceTree = "<group>"; };
 		2CADB1C42514BC5F00276DEF /* 452. 用最少数量的箭引爆气球.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "452. 用最少数量的箭引爆气球.swift"; sourceTree = "<group>"; };
@@ -490,6 +492,7 @@
 				2CD3A5E52507607B00EB78FB /* 242. 有效的字母异位词.swift */,
 				2CD3A5E325071B0700EB78FB /* 572. 另一个树的子树.swift */,
 				2C571FB224F7F0B100E74CB7 /* 面试题 01.09. 字符串轮转.swift */,
+				2C96B4C9262EFAD600FCF99A /* 28. 实现 strStr().swift */,
 			);
 			path = "字符串";
 			sourceTree = "<group>";
@@ -731,6 +734,7 @@
 				2C84C68D254BF2B6002E89E8 /* 插入排序1.swift in Sources */,
 				2C571F8D24F5119400E74CB7 /* 16. 部分排序.swift in Sources */,
 				2C84C745254D49AD002E89E8 /* UnionFind_QU.swift in Sources */,
+				2C96B4CA262EFAD600FCF99A /* 28. 实现 strStr().swift in Sources */,
 				2CD6F7B525108EE80091F223 /* 54. 螺旋矩阵.swift in Sources */,
 				2C571F9724F521B000E74CB7 /* ListNode.swift in Sources */,
 				2C84C596254A63C0002E89E8 /* Sort.swift in Sources */,
