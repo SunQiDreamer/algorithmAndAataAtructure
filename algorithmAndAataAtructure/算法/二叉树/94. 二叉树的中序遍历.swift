@@ -15,6 +15,7 @@ func preorder(_ root: TreeNode<Int>?) -> [Int] {
     return sorts
 }
 
+// 递归
 func preorder(_ root: TreeNode<Int>?, array: inout [Int]){
     if root == nil {
         return
@@ -27,6 +28,7 @@ func preorder(_ root: TreeNode<Int>?, array: inout [Int]){
     preorder(root?.right, array: &array)
 }
 
+// 迭代
 func preorder1(_ root: TreeNode<Int>?) -> [Int] {
     guard let root = root else {
         return []
