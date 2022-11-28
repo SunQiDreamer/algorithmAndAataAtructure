@@ -8,8 +8,7 @@
 
 import Foundation
 
-<<<<<<< HEAD
-//print(strStr("abc", "c"))
-=======
-print(strStr("abcdefg", "abd"))
->>>>>>> 8d5b903c516b1b262f141c6de3b00ae2b88c09be
+let sort = MergeSort()
+sort.array = [6, 5, 1, 2, 3]
+let result = sort.sort()
+print(result)

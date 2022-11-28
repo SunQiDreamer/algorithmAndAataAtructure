@@ -9,12 +9,13 @@
 import Foundation
 
 // 前序遍历后序遍历都可以
+@discardableResult
 func invertTree(_ root: TreeNode<Int>?) -> TreeNode<Int>? {
     if let root = root {
         
         (root.left, root.right) = (root.right, root.left)
-        _ = invertTree(root.left)
-        _ = invertTree(root.right)
+        invertTree(root.left)
+        invertTree(root.right)
     }
     return root
 }

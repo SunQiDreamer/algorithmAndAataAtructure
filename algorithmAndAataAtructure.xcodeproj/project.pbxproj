@@ -494,11 +494,7 @@
 				2CD3A5E52507607B00EB78FB /* 242. 有效的字母异位词.swift */,
 				2CD3A5E325071B0700EB78FB /* 572. 另一个树的子树.swift */,
 				2C571FB224F7F0B100E74CB7 /* 面试题 01.09. 字符串轮转.swift */,
-<<<<<<< HEAD
-				2C96B4C9262EFAD600FCF99A /* 28. 实现 strStr().swift */,
-=======
 				2C51975B263866D7009297DC /* 28. 实现 strStr().swift */,
->>>>>>> 8d5b903c516b1b262f141c6de3b00ae2b88c09be
 			);
 			path = "字符串";
 			sourceTree = "<group>";
@@ -740,11 +736,7 @@
 				2C84C68D254BF2B6002E89E8 /* 插入排序1.swift in Sources */,
 				2C571F8D24F5119400E74CB7 /* 16. 部分排序.swift in Sources */,
 				2C84C745254D49AD002E89E8 /* UnionFind_QU.swift in Sources */,
-<<<<<<< HEAD
-				2C96B4CA262EFAD600FCF99A /* 28. 实现 strStr().swift in Sources */,
-=======
 				2C51975C263866D7009297DC /* 28. 实现 strStr().swift in Sources */,
->>>>>>> 8d5b903c516b1b262f141c6de3b00ae2b88c09be
 				2CD6F7B525108EE80091F223 /* 54. 螺旋矩阵.swift in Sources */,
 				2C571F9724F521B000E74CB7 /* ListNode.swift in Sources */,
 				2C84C596254A63C0002E89E8 /* Sort.swift in Sources */,

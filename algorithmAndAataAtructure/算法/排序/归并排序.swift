@@ -46,13 +46,12 @@ class MergeSort: Sort {
             // 从小到大排列
             if ri < re && array[ri] < leftArray?[li] ?? 0 {
                 array[ai] = array[ri]
-                ai = ai + 1
                 ri = ri + 1
             } else {
                 array[ai] = leftArray?[li] ?? 0
-                ai = ai + 1
                 li = li + 1
             }
+            ai = ai + 1
         }
     }
 }
