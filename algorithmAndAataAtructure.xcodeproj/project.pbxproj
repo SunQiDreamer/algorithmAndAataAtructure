@@ -106,7 +106,6 @@
 		2C8F5D35262B0A7E0049E514 /* 4. 寻找两个正序数组的中位数.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F5D34262B0A7E0049E514 /* 4. 寻找两个正序数组的中位数.swift */; };
 		2C96B477262DA3BC00FCF99A /* 27. 移除元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C96B476262DA3BC00FCF99A /* 27. 移除元素.swift */; };
 		2C96B47B262DAC1A00FCF99A /* 6. Z 字形变换.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C96B47A262DAC1A00FCF99A /* 6. Z 字形变换.swift */; };
-		2C96B4CA262EFAD600FCF99A /* 28. 实现 strStr().swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C96B4C9262EFAD600FCF99A /* 28. 实现 strStr().swift */; };
 		2CA10776255285860086F08D /* 剑指 Offer 10- I. 斐波那契数列.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA10775255285860086F08D /* 剑指 Offer 10- I. 斐波那契数列.swift */; };
 		2CADB1C12514BC1400276DEF /* 455. 分发饼干.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADB1C02514BC1400276DEF /* 455. 分发饼干.swift */; };
 		2CADB1C52514BC5F00276DEF /* 452. 用最少数量的箭引爆气球.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADB1C42514BC5F00276DEF /* 452. 用最少数量的箭引爆气球.swift */; };
@@ -154,6 +153,7 @@
 		2CFABBDF250CBF2300D03A9B /* 17. 电话号码的字母组合.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFABBDE250CBF2300D03A9B /* 17. 电话号码的字母组合.swift */; };
 		2CFABBE1250CD86700D03A9B /* 46. 全排列.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFABBE0250CD86700D03A9B /* 46. 全排列.swift */; };
 		2CFABBE3250CE29200D03A9B /* 22. 括号生成.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFABBE2250CE29200D03A9B /* 22. 括号生成.swift */; };
+		3FD7547F2935DCC60028B120 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7547E2935DCC60028B120 /* Heap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -269,7 +269,6 @@
 		2C8F5D34262B0A7E0049E514 /* 4. 寻找两个正序数组的中位数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4. 寻找两个正序数组的中位数.swift"; sourceTree = "<group>"; };
 		2C96B476262DA3BC00FCF99A /* 27. 移除元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "27. 移除元素.swift"; sourceTree = "<group>"; };
 		2C96B47A262DAC1A00FCF99A /* 6. Z 字形变换.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6. Z 字形变换.swift"; sourceTree = "<group>"; };
-		2C96B4C9262EFAD600FCF99A /* 28. 实现 strStr().swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "28. 实现 strStr().swift"; sourceTree = "<group>"; };
 		2CA10775255285860086F08D /* 剑指 Offer 10- I. 斐波那契数列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "剑指 Offer 10- I. 斐波那契数列.swift"; sourceTree = "<group>"; };
 		2CADB1C02514BC1400276DEF /* 455. 分发饼干.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "455. 分发饼干.swift"; sourceTree = "<group>"; };
 		2CADB1C42514BC5F00276DEF /* 452. 用最少数量的箭引爆气球.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "452. 用最少数量的箭引爆气球.swift"; sourceTree = "<group>"; };
@@ -317,6 +316,7 @@
 		2CFABBDE250CBF2300D03A9B /* 17. 电话号码的字母组合.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "17. 电话号码的字母组合.swift"; sourceTree = "<group>"; };
 		2CFABBE0250CD86700D03A9B /* 46. 全排列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "46. 全排列.swift"; sourceTree = "<group>"; };
 		2CFABBE2250CE29200D03A9B /* 22. 括号生成.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "22. 括号生成.swift"; sourceTree = "<group>"; };
+		3FD7547E2935DCC60028B120 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -440,6 +440,7 @@
 				2C571FA324F6658800E74CB7 /* Stack.swift */,
 				2C571FA724F754FF00E74CB7 /* Deque.swift */,
 				2C571FAB24F788A100E74CB7 /* TreeNode.swift */,
+				3FD7547E2935DCC60028B120 /* Heap.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -749,6 +750,7 @@
 				2C6680A62518DBAF00C0D959 /* 111. 二叉树的最小深度.swift in Sources */,
 				2C5FDB4C2559752C007499BA /* 剑指 Offer 22. 链表中倒数第k个节点.swift in Sources */,
 				2CD6F7CF251241A20091F223 /* 24. 两两交换链表中的节点.swift in Sources */,
+				3FD7547F2935DCC60028B120 /* Heap.swift in Sources */,
 				2C4F1D502516123000BE25FB /* 1143. 最长公共子序列.swift in Sources */,
 				2C519749262898C6009297DC /* 84. 柱状图中最大的矩形.swift in Sources */,
 				2C571FA224F6645500E74CB7 /* 155. 最小栈.swift in Sources */,
