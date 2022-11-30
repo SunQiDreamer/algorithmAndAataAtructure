@@ -65,8 +65,8 @@ class PathInfo<V: Hashable, E: Hashable> {
 }
 
 protocol Graph {
-    associatedtype V: Hashable;
-    associatedtype E: Hashable;
+    associatedtype V: Hashable
+    associatedtype E: Hashable
         
     var weightManager: WeightManager<E> { get set }
     func edgesSize() -> Int
@@ -98,5 +98,35 @@ protocol Graph {
 }
 
 extension Graph {
+    func edgesSize() -> Int {
+        0
+    }
     
+    func verticesSize() -> Int {
+        0
+    }
+    
+    /// 添加顶点
+    /// - Parameter v: 顶点
+    func addVertices(_ v: V) {}
+    
+    /// 添加边
+    func addEdges(_ from: V, to: V) {}
+    func addEdges(_ from: V, to: V, weight: E?) {}
+    
+    func removeVertex(_ v: V) {}
+    func removeEdge(_ from: V, to: V) {}
+    
+    func bfs(_ begin: V, visitor: VertexVisitor<V>) {}
+    func dfs(_ begin: V, visitor: VertexVisitor<V>) {}
+    
+    func mst() -> Set<EdgeInfo<V, E>> {
+        Set()
+    }
+    
+    func topoligicalSort() -> Array<V> { Array() }
+        
+    func shortestPath(_ begin: V) -> [V: PathInfo<V, E>] { [:] }
+    
+    func shortestPath() -> [V: [V: PathInfo<V, E>]] { [:] }
 }
